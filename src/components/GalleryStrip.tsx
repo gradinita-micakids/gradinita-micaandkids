@@ -19,7 +19,7 @@ export default function GalleryStrip() {
   const inView = useInView(ref, { once: true, margin: "-50px" });
 
   return (
-    <section className="py-20 bg-cream">
+    <section className="py-20 bg-cream/80">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

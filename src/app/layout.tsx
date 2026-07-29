@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Preloader from "@/components/Preloader";
+import Kid3DWrapper from "@/components/Kid3DWrapper";
 
 const dynapuff = DynaPuff({
   subsets: ["latin"],
@@ -34,9 +35,12 @@ export default function RootLayout({
     <html lang="ro" className={`${dynapuff.variable} ${nunito.variable}`}>
       <body className="font-body antialiased">
         <Preloader />
-        <Navbar />
-        {children}
-        <Footer />
+        <Kid3DWrapper />
+        <div className="relative z-10">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

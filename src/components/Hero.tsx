@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative pt-28 pb-16 overflow-hidden bg-white">
+    <section className="relative pt-28 pb-16 overflow-hidden bg-white/80">
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Title + text */}

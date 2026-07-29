@@ -60,7 +60,7 @@ export default function DespreNoiPage() {
       </div>
 
       {/* Values */}
-      <div className="bg-white py-20">
+      <div className="bg-white/80 py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-5xl font-bold text-green-dark mb-4">
@@ -91,7 +91,7 @@ export default function DespreNoiPage() {
       </div>
 
       {/* Mascot section */}
-      <div className="py-20 bg-cream">
+      <div className="py-20 bg-cream/80">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <div className="relative w-48 h-48 mx-auto mb-8">
             <Image

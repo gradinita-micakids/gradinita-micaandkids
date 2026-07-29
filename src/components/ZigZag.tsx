@@ -34,7 +34,7 @@ const sections = [
 
 export default function ZigZag() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white/80">
       <div className="max-w-7xl mx-auto px-6 space-y-24">
         {sections.map((s, i) => (
           <ZigZagItem key={s.title} {...s} index={i} />

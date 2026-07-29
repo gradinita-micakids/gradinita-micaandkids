@@ -10,7 +10,7 @@ export default function CTA() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section className="py-20 bg-cream relative overflow-hidden">
+    <section className="py-20 bg-cream/80 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-green-light/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-orange-light/10 rounded-full blur-3xl" />
 

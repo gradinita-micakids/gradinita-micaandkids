@@ -131,7 +131,7 @@ export default function PetreceriPage() {
       </div>
 
       {/* Features */}
-      <div className="bg-white py-20">
+      <div className="bg-white/80 py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-5xl font-bold text-green-dark mb-4">
@@ -162,7 +162,7 @@ export default function PetreceriPage() {
       </div>
 
       {/* Packages */}
-      <div className="py-20 bg-cream">
+      <div className="py-20 bg-cream/80">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-5xl font-bold text-green-dark mb-4">
@@ -215,7 +215,7 @@ export default function PetreceriPage() {
       </div>
 
       {/* CTA */}
-      <div className="py-20 bg-white">
+      <div className="py-20 bg-white/80">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-green-dark mb-6">
             Hai să planuim petrecerea perfectă!

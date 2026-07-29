@@ -41,7 +41,7 @@ export default function Services() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section className="pt-8 pb-20 bg-cream">
+    <section className="pt-8 pb-20 bg-cream/80">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           ref={ref}
