@@ -24,7 +24,7 @@ const galleryItems = [
 
 export default function GaleriePage() {
   return (
-    <div className="pt-28 pb-20">
+    <div className="pt-28 pb-20 bg-white/80 min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h1 className="font-display text-4xl md:text-6xl font-bold text-green-dark mb-4">

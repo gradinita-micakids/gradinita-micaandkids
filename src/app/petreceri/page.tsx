@@ -41,57 +41,9 @@ const features = [
   },
 ];
 
-const packages = [
-  {
-    name: "Petrecere Basic",
-    duration: "2 ore",
-    maxKids: "15 copii",
-    price: "de la 500 lei",
-    features: [
-      "Închiriere spațiu",
-      "Zonă de joacă",
-      "Masă & scaune",
-      "Sistem audio",
-    ],
-    accent: "bg-yellow/10 border-yellow/30",
-    badge: "text-yellow",
-  },
-  {
-    name: "Petrecere Premium",
-    duration: "3 ore",
-    maxKids: "25 copii",
-    price: "de la 800 lei",
-    features: [
-      "Tot ce include Basic",
-      "Animator dedicat",
-      "Ateliere creative",
-      "Decorațiuni tematice",
-      "Foto & video",
-    ],
-    accent: "bg-green-light/10 border-green-light/30",
-    badge: "text-green-dark",
-    popular: true,
-  },
-  {
-    name: "Petrecere VIP",
-    duration: "4 ore",
-    maxKids: "30+ copii",
-    price: "la cerere",
-    features: [
-      "Tot ce include Premium",
-      "2 animatori",
-      "Catering inclus",
-      "Tort personalizat",
-      "Mascota Mica — apariție specială",
-    ],
-    accent: "bg-orange-light/10 border-orange-light/30",
-    badge: "text-orange-dark",
-  },
-];
-
 export default function PetreceriPage() {
   return (
-    <div className="pt-28 pb-20">
+    <div className="pt-28 pb-20 bg-white/80 min-h-screen">
       {/* Hero */}
       <div className="max-w-7xl mx-auto px-6 mb-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -130,6 +82,44 @@ export default function PetreceriPage() {
         </div>
       </div>
 
+      {/* General pricing card */}
+      <div className="py-12 bg-cream/80">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="bg-white rounded-3xl p-10 shadow-soft border-2 border-orange-light/30 text-center">
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-green-dark mb-4">
+              Închiriere locație în weekend
+            </h2>
+            <div className="flex items-center justify-center gap-6 flex-wrap">
+              <div className="flex items-center gap-2">
+                <span className="text-3xl">⏱️</span>
+                <div className="text-left">
+                  <p className="text-xs text-foreground/50 uppercase tracking-wider">Durată</p>
+                  <p className="font-display text-xl font-bold text-green-dark">4 ore</p>
+                </div>
+              </div>
+              <div className="w-px h-12 bg-foreground/10" />
+              <div className="flex items-center gap-2">
+                <span className="text-3xl">💰</span>
+                <div className="text-left">
+                  <p className="text-xs text-foreground/50 uppercase tracking-wider">Preț</p>
+                  <p className="font-display text-xl font-bold text-orange-dark">1000 lei</p>
+                </div>
+              </div>
+            </div>
+            <p className="text-foreground/60 text-sm mt-6 max-w-xl mx-auto">
+              Spațiu complet pentru petrecerea copilului tău — sală de joacă,
+              curte exterioară, zonă de catering și sistem audio.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-block mt-6 px-8 py-4 bg-orange-light text-white text-sm font-bold uppercase tracking-wider no-underline transition-all hover:bg-orange-dark rounded-full shadow-soft"
+            >
+              Rezervă acum →
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* Features */}
       <div className="bg-white/80 py-20">
         <div className="max-w-7xl mx-auto px-6">
@@ -155,59 +145,6 @@ export default function PetreceriPage() {
                 <p className="text-foreground/60 text-sm leading-relaxed">
                   {f.desc}
                 </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Packages */}
-      <div className="py-20 bg-cream/80">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-5xl font-bold text-green-dark mb-4">
-              Pachete & prețuri
-            </h2>
-            <p className="text-foreground/60 text-lg">
-              Alege pachetul potrivit pentru petrecerea copilului tău
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {packages.map((p, i) => (
-              <div
-                key={i}
-                className={`relative bg-white rounded-3xl p-8 shadow-soft border-2 ${p.accent} ${
-                  p.popular ? "lg:-translate-y-4" : ""
-                }`}
-              >
-                {p.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-light text-white text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full shadow-soft">
-                    Cel mai popular
-                  </div>
-                )}
-                <h3 className={`font-display text-2xl font-bold ${p.badge} mb-2`}>
-                  {p.name}
-                </h3>
-                <p className="text-foreground/50 text-sm mb-1">⏱ {p.duration}</p>
-                <p className="text-foreground/50 text-sm mb-4">👶 {p.maxKids}</p>
-                <p className="font-display text-3xl font-bold text-green-dark mb-6">
-                  {p.price}
-                </p>
-                <ul className="flex flex-col gap-3 mb-8">
-                  {p.features.map((f, j) => (
-                    <li key={j} className="flex items-center gap-2 text-sm text-foreground/70">
-                      <span className={`w-2 h-2 rounded-full ${p.badge.replace("text-", "bg-")}`} />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  href="/contact"
-                  className={`block text-center px-6 py-3 ${p.badge.replace("text-", "bg-")} text-white text-sm font-bold uppercase tracking-wider no-underline transition-all hover:opacity-90 rounded-full shadow-soft`}
-                >
-                  Rezervă →
-                </Link>
               </div>
             ))}
           </div>

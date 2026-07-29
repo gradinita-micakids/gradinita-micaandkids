@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Preloader from "@/components/Preloader";
 import Kid3DWrapper from "@/components/Kid3DWrapper";
+import Phone3D from "@/components/Phone3D";
 
 const dynapuff = DynaPuff({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body className="font-body antialiased">
         <Preloader />
         <Kid3DWrapper />
+        <Phone3D />
         <div className="relative z-10">
           <Navbar />
           {children}

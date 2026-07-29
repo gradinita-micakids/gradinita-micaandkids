@@ -19,7 +19,7 @@ const values = [
 
 export default function DespreNoiPage() {
   return (
-    <div className="pt-28 pb-20">
+    <div className="pt-28 pb-20 bg-white/80 min-h-screen">
       {/* Hero section */}
       <div className="max-w-7xl mx-auto px-6 mb-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
