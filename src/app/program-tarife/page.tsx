@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import DailySchedule from "@/components/DailySchedule";
 
 export const metadata: Metadata = {
   title: "Program & Tarife — Mica and Kids",
@@ -56,16 +57,29 @@ const includedActivities = [
 export default function ProgramTarifePage() {
   return (
     <div className="pt-28 pb-20 bg-white/80 min-h-screen">
-      {/* Hero */}
-      <div className="max-w-7xl mx-auto px-6 mb-16 text-center">
-        <h1 className="font-display text-4xl md:text-6xl font-bold text-green-dark mb-6">
-          Program & Tarife
-        </h1>
-        <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
-          Flexibilitate pentru fiecare familie. Alege programul care se potrivește
-          nevoilor tale — de la program scurt până la program lung, cu activități
-          educaționale incluse.
-        </p>
+      {/* Daily schedule */}
+      <div className="max-w-7xl mx-auto px-6 mb-20">
+        <div className="text-center mb-10">
+          <h1 className="font-display text-4xl md:text-6xl font-bold text-green-dark mb-6">
+            Program & Tarife
+          </h1>
+          <p className="text-foreground/60 text-lg max-w-2xl mx-auto mb-2">
+            Flexibilitate pentru fiecare familie. Alege programul care se potrivește
+            nevoilor tale — de la program scurt până la program lung, cu activități
+            educaționale incluse.
+          </p>
+        </div>
+
+        <div className="text-center mb-8">
+          <h2 className="font-display text-2xl md:text-3xl font-bold text-green-dark mb-2">
+            Programul zilnic
+          </h2>
+          <p className="text-foreground/50 text-sm">
+            Apasă pe fiecare interval pentru detalii
+          </p>
+        </div>
+
+        <DailySchedule />
       </div>
 
       {/* Traditional — Creșă & Grădiniță */}
