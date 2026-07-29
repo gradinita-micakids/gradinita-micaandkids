@@ -30,8 +30,8 @@ export default function DespreNoiPage() {
             <p className="text-foreground/70 text-lg leading-relaxed mb-6">
               Numele Mica and Kids poartă în spate o poveste caldă și autentică,
               născută chiar din lumea celor mici. Denumirea a fost inspirată de
-              fondatoarele noastre, Michelle și Carmen, fiind o idee venită spont
-              de la un copil care a asociat primele două litere din numele lor.
+              fondatoarea noastră, Michelle, fiind o idee venită spontan
+              de la un copil care a asociat primele litere din numele ei.
             </p>
             <p className="text-foreground/70 text-lg leading-relaxed mb-8">
               Am preluat spațiul unei foste grădinițe și l-am transformat cu
