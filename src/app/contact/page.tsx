@@ -47,7 +47,7 @@ export default function ContactPage() {
                   <span className="text-2xl">✉️</span>
                   <div>
                     <p className="text-xs text-foreground/50 uppercase tracking-wider mb-1">Email</p>
-                    <a href="mailto:contact@micaandkids.ro" className="text-foreground/80 hover:text-green-dark no-underline">contact@micaandkids.ro</a>
+                    <a href="mailto:contact@gradinitamicaandkids.ro" className="text-foreground/80 hover:text-green-dark no-underline">contact@gradinitamicaandkids.ro</a>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">

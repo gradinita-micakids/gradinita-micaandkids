@@ -10,12 +10,12 @@ export default function Preloader() {
     return () => clearTimeout(timer);
   }, []);
 
-  if (!loading) return null;
-
   return (
     <div
-      className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-cream transition-opacity duration-700"
-      style={{ opacity: loading ? 1 : 0 }}
+      className={`fixed inset-0 z-[100] flex flex-col items-center justify-center bg-cream transition-opacity duration-700 pointer-events-none ${
+        loading ? "opacity-100" : "opacity-0"
+      }`}
+      style={{ display: loading ? "flex" : "none" }}
     >
       <div className="relative w-40 h-40 mb-6">
         <video
