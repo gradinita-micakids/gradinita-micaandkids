@@ -33,14 +33,14 @@ export default function ContactPage() {
                   <span className="text-2xl">📍</span>
                   <div>
                     <p className="text-xs text-foreground/50 uppercase tracking-wider mb-1">Adresă</p>
-                    <p className="text-foreground/80">Strada ___ nr. __, București</p>
+                    <p className="text-foreground/80">Strada Sfântul Gheorghe 5B<br />Popești Leordeni, Ilfov</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="text-2xl">📞</span>
                   <div>
                     <p className="text-xs text-foreground/50 uppercase tracking-wider mb-1">Telefon</p>
-                    <a href="tel:0000000000" className="text-foreground/80 hover:text-green-dark no-underline">00 000 000</a>
+                    <a href="tel:0740467056" className="text-foreground/80 hover:text-green-dark no-underline">0740 467 056</a>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">

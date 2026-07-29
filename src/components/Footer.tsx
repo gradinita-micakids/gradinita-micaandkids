@@ -41,8 +41,8 @@ export default function Footer() {
               Contact
             </h3>
             <ul className="flex flex-col gap-2 list-none">
-              <li className="text-white/70 text-sm">Strada ___ nr. __, București</li>
-              <li><a href="tel:0000000000" className="text-white/70 hover:text-yellow no-underline transition-colors text-sm">00 000 000</a></li>
+              <li className="text-white/70 text-sm">Strada Sfântul Gheorghe 5B, Popești Leordeni, Ilfov</li>
+              <li><a href="tel:0740467056" className="text-white/70 hover:text-yellow no-underline transition-colors text-sm">0740 467 056</a></li>
               <li><a href="mailto:contact@gradinitamicaandkids.ro" className="text-white/70 hover:text-yellow no-underline transition-colors text-sm">contact@gradinitamicaandkids.ro</a></li>
             </ul>
           </div>
