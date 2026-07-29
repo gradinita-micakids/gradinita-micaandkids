@@ -103,7 +103,7 @@ export default function ServiciiPage() {
                 </ul>
                 <Link
                   href="/contact"
-                  className={`inline-block px-8 py-4 ${s.accent.replace("text-", "bg-")} text-white text-sm font-bold uppercase tracking-wider no-underline transition-all hover:opacity-90 rounded-full shadow-soft`}
+                  className="inline-block px-8 py-4 bg-green-light text-white text-sm font-bold uppercase tracking-wider no-underline transition-all hover:bg-green-dark rounded-full shadow-soft"
                 >
                   Înscrie-te →
                 </Link>
