@@ -65,7 +65,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="relative flex justify-center order-2 lg:order-2"
           >
-            <div className="relative w-full max-w-[280px] mx-auto">
+            <div className="relative w-full max-w-[180px] lg:max-w-[280px] mx-auto">
               <video
                 src="/videos/micabun.mp4"
                 autoPlay
