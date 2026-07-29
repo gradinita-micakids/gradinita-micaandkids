@@ -9,6 +9,7 @@ const navLinks = [
   { href: "/", label: "Acasă" },
   { href: "/despre-noi", label: "Despre noi" },
   { href: "/servicii", label: "Servicii" },
+  { href: "/petreceri", label: "Petreceri" },
   { href: "/galerie", label: "Galerie" },
   { href: "/contact", label: "Contact" },
 ];
