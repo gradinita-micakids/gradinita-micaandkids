@@ -3,6 +3,7 @@
 import { useRef, useEffect, useState } from "react";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
 
 export default function Phone3D() {
   const mountRef = useRef<HTMLDivElement>(null);
@@ -54,9 +55,12 @@ export default function Phone3D() {
 
     // Load GLB
     const loader = new GLTFLoader();
+    const dracoLoader = new DRACOLoader();
+    dracoLoader.setDecoderPath("https://www.gstatic.com/draco/v1/decoders/");
+    loader.setDRACOLoader(dracoLoader);
     let pivot: THREE.Group | null = null;
 
-    loader.load("/models/phone.glb", (gltf) => {
+    loader.load("/models/phone-opt.glb", (gltf) => {
       const model = gltf.scene;
 
       pivot = new THREE.Group();
