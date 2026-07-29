@@ -24,7 +24,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="font-display text-5xl md:text-7xl font-bold text-green-dark leading-tight mb-6"
             >
-              Gradinita<br />
+              Grădinița<br />
               <span className="text-orange-dark">Mica and Kids</span>
             </motion.h1>
             <motion.p

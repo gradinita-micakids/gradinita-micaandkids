@@ -9,7 +9,7 @@ const sections = [
   {
     title: "Învățare prin joacă în aer liber",
     text: "Activitățile noastre interactive se desfășoară în exterior — inclusiv servirea meselor. Copiii explorează, se joacă și învață prin experiențe directe, nu din cărți.",
-    image: "/images/reference/services-header.png",
+    image: "/images/aerliber.png",
     cta: "Despre noi",
     href: "/despre-noi",
     reverse: false,
@@ -17,7 +17,7 @@ const sections = [
   {
     title: "Conexiune cu natura și animalele",
     text: "Copiii învață responsabilitate prin grija oferită animalelor. Grădina, animalele și activitățile în aer liber sunt pilonii educației noastre.",
-    image: "/images/mascota/Mica Albinuța se joacă.png",
+    image: "/images/natura.png",
     cta: "Vezi galeria",
     href: "/galerie",
     reverse: true,
@@ -25,7 +25,7 @@ const sections = [
   {
     title: "Echipa noastră — empatie și profesionalism",
     text: "Ne bazăm pe implicare totală, iubire față de copii și personal ghidat de empatie, flexibilitate și profesionalism. Fiecare copil este unic și merită atenție individuală.",
-    image: "/images/reference/doctor.png",
+    image: "/images/echipamica.png",
     cta: "Contactează-ne",
     href: "/contact",
     reverse: false,

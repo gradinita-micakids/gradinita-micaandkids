@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Logo + description */}
           <div>
             <Image
-              src="/images/logo/Mika and Kids lung.jpg"
+              src="/images/logo/logo-mica.png"
               alt="Mica and Kids"
               width={160}
               height={48}

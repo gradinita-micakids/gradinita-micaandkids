@@ -1,13 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 export default function Preloader() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1500);
+    const timer = setTimeout(() => setLoading(false), 4000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -18,12 +17,13 @@ export default function Preloader() {
       className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-cream transition-opacity duration-700"
       style={{ opacity: loading ? 1 : 0 }}
     >
-      <div className="relative w-32 h-32 mb-6">
-        <Image
-          src="/images/mascota/Mica Albinuța Dansatoarea.png"
-          alt="Mica"
-          width={128}
-          height={128}
+      <div className="relative w-40 h-40 mb-6">
+        <video
+          src="/videos/micabun.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
           className="w-full h-full object-contain animate-float"
         />
       </div>
