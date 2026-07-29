@@ -18,7 +18,7 @@ const testimonials = [
   },
   {
     name: "Elena R.",
-    role: "Mamă, twins de 4 ani",
+    role: "Mamă, gemeni de 4 ani",
     text: "Conceptul outdoor-first este genial. Copiii învață despre natură, animale și se dezvoltă armonios. Recomand cu toată încrederea!",
     rating: 5,
   },
