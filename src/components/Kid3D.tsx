@@ -31,7 +31,7 @@ export default function Kid3D() {
     camera.position.set(0, 0, 6);
     const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: !isMobile });
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1 : 2));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1 : 1.5));
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     mount.appendChild(renderer.domElement);
 
@@ -88,10 +88,12 @@ export default function Kid3D() {
 
     let targetRotationY = 0;
     let currentRotationY = 0;
+    let needsRender = true;
 
     const onScroll = () => {
       const max = document.documentElement.scrollHeight - window.innerHeight;
-      targetRotationY = max > 0 ? (window.scrollY / max) * Math.PI * 4 : 0;
+      targetRotationY = max > 0 ? (window.scrollY / max) * Math.PI * 2 : 0;
+      needsRender = true;
     };
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
@@ -101,23 +103,35 @@ export default function Kid3D() {
     const onMouseMove = (e: MouseEvent) => {
       mouseX = (e.clientX / window.innerWidth) * 2 - 1;
       mouseY = (e.clientY / window.innerHeight) * 2 - 1;
+      needsRender = true;
     };
     window.addEventListener("mousemove", onMouseMove, { passive: true });
 
-    const clock = new THREE.Clock();
+    let lastParX = 999, lastParY = 999, lastRotY = 999;
 
     const animate = () => {
       requestAnimationFrame(animate);
-      const time = clock.getElapsedTime();
 
       parX += (mouseX - parX) * 0.05;
       parY += (mouseY - parY) * 0.05;
       currentRotationY += (targetRotationY - currentRotationY) * 0.05;
 
+      // Only render if something actually changed
+      const changed =
+        Math.abs(parX - lastParX) > 0.001 ||
+        Math.abs(parY - lastParY) > 0.001 ||
+        Math.abs(currentRotationY - lastRotY) > 0.001;
+
+      if (!changed && !needsRender) return;
+
+      lastParX = parX;
+      lastParY = parY;
+      lastRotY = currentRotationY;
+      needsRender = false;
+
       if (wrapper.children.length > 0) {
         wrapper.rotation.y = currentRotationY + parX * 0.3;
         wrapper.rotation.x = parY * 0.1;
-        wrapper.rotation.z = Math.sin(time * 0.8) * 0.02;
       }
 
       camera.position.x = parX * 0.5;
