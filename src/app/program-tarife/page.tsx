@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import DailySchedule from "@/components/DailySchedule";
 
 export const metadata: Metadata = {
   title: "Program & Tarife — Mica and Kids",
@@ -13,20 +12,20 @@ const traditionalPrograms = [
     type: "Program scurt",
     schedule: "07:30 - 12:30",
     price: "2000 lei",
-    features: ["Mic dejun", "Activități de dimineață", "Snack"],
+    features: ["Mic dejun", "Activități de dimineață", "Gustare"],
   },
   {
     type: "Program mediu",
     schedule: "07:30 - 16:30",
     price: "2350 lei",
-    features: ["Mic dejun", "Prânz", "Snack", "Activități de dimineață", "Odihnă / somn"],
+    features: ["Mic dejun", "Prânz", "Gustare", "Activități de dimineață", "Odihnă / somn"],
     popular: true,
   },
   {
     type: "Program lung",
     schedule: "07:30 - 18:30",
     price: "2500 lei",
-    features: ["Mic dejun", "Prânz", "Snack", "Activități de dimineață", "Odihnă / somn", "Activități de după-amiază"],
+    features: ["Mic dejun", "Prânz", "Gustare", "Activități de dimineață", "Odihnă / somn", "Activități de după-amiază"],
   },
 ];
 
@@ -35,13 +34,13 @@ const afterschoolPrograms = [
     type: "Program mediu",
     schedule: "12:30 - 16:30",
     price: "1800 lei",
-    features: ["Prânz", "Snack", "Ajutor pentru teme", "Activități creative"],
+    features: ["Prânz", "Gustare", "Ajutor pentru teme", "Activități creative"],
   },
   {
     type: "Program lung",
     schedule: "12:30 - 18:30",
     price: "2000 lei",
-    features: ["Prânz", "Snack", "Ajutor pentru teme", "Activități creative", "Sport și mișcare", "Socializare"],
+    features: ["Prânz", "Gustare", "Ajutor pentru teme", "Activități creative", "Sport și mișcare", "Socializare"],
   },
 ];
 
@@ -57,29 +56,16 @@ const includedActivities = [
 export default function ProgramTarifePage() {
   return (
     <div className="pt-28 pb-20 bg-white/80 min-h-screen">
-      {/* Daily schedule */}
-      <div className="max-w-7xl mx-auto px-6 mb-20">
-        <div className="text-center mb-10">
-          <h1 className="font-display text-4xl md:text-6xl font-bold text-green-dark mb-6">
-            Program & Tarife
-          </h1>
-          <p className="text-foreground/60 text-lg max-w-2xl mx-auto mb-2">
-            Flexibilitate pentru fiecare familie. Alege programul care se potrivește
-            nevoilor tale — de la program scurt până la program lung, cu activități
-            educaționale incluse.
-          </p>
-        </div>
-
-        <div className="text-center mb-8">
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-green-dark mb-2">
-            Programul zilnic
-          </h2>
-          <p className="text-foreground/50 text-sm">
-            Apasă pe fiecare interval pentru detalii
-          </p>
-        </div>
-
-        <DailySchedule />
+      {/* Hero */}
+      <div className="max-w-7xl mx-auto px-6 mb-20 text-center">
+        <h1 className="font-display text-4xl md:text-6xl font-bold text-green-dark mb-6">
+          Program & Tarife
+        </h1>
+        <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
+          Flexibilitate pentru fiecare familie. Alege programul care se potrivește
+          nevoilor tale — de la program scurt până la program lung, cu activități
+          educaționale incluse.
+        </p>
       </div>
 
       {/* Traditional — Creșă & Grădiniță */}

@@ -40,7 +40,8 @@ export default function ContactPage() {
                   <span className="text-2xl">📞</span>
                   <div>
                     <p className="text-xs text-foreground/50 uppercase tracking-wider mb-1">Telefon</p>
-                    <a href="tel:0740467056" className="text-foreground/80 hover:text-green-dark no-underline">0740 467 056</a>
+                    <a href="tel:0740467056" className="text-foreground/80 hover:text-green-dark no-underline block">0740 467 056</a>
+                    <a href="tel:0762119691" className="text-foreground/80 hover:text-green-dark no-underline block">0762 119 691</a>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">

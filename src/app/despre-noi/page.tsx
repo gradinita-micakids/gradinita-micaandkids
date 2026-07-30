@@ -28,15 +28,20 @@ export default function DespreNoiPage() {
               Povestea noastră
             </h1>
             <p className="text-foreground/70 text-lg leading-relaxed mb-6">
-              Numele Mica and Kids poartă în spate o poveste caldă și autentică,
-              născută chiar din lumea celor mici. Denumirea a fost inspirată de
-              fondatoarea noastră, Michelle, fiind o idee venită spontan
-              de la un copil care a asociat primele litere din numele ei.
+              Mica and Kids a luat naștere din dorința a două mame, Michelle și Carmen,
+              de a crea un loc în care copiii să crească fericiți, liberi și conectați
+              cu natura. Michelle a venit cu viziunea și curajul antreprenorial, iar
+              Carmen cu sufletul pedagog și dragostea pentru cei mici.
+            </p>
+            <p className="text-foreground/70 text-lg leading-relaxed mb-6">
+              Numele brandului a fost inspirat spontan de un copil care a asociat
+              primele litere din numele Michelle — „Mica”. Un nume simplu, cald,
+              care prinde viață alături de „Kids”, copiii din centrul universului nostru.
             </p>
             <p className="text-foreground/70 text-lg leading-relaxed mb-8">
-              Am preluat spațiul unei foste grădinițe și l-am transformat cu
-              entuziasm și curaj într-un loc plin de viață, redefinind complet
-              ideea de educație preșcolară și îngrijire.
+              Am preluat cu drag spațiul în care copiii noștri au făcut primii pași
+              în grădiniță și l-am transformat cu entuziasm într-un loc plin de viață,
+              redefinind complet ideea de educație preșcolară și îngrijire.
             </p>
             <Link
               href="/contact"
@@ -54,6 +59,49 @@ export default function DespreNoiPage() {
                 height={350}
                 className="w-full h-full object-contain"
               />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Founders */}
+      <div className="bg-white/80 py-20">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="font-display text-3xl md:text-5xl font-bold text-green-dark mb-4">
+              Fondatoarele noastre
+            </h2>
+            <p className="text-foreground/60 text-lg">
+              Două mame, două viziuni, un vis comun
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-cream rounded-3xl p-8 shadow-soft text-center">
+              <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-green-light/20 flex items-center justify-center text-4xl font-display font-bold text-green-dark">
+                M
+              </div>
+              <h3 className="font-display text-2xl font-bold text-green-dark mb-2">
+                Michelle
+              </h3>
+              <p className="text-foreground/60 text-sm leading-relaxed">
+                Mama cu viziune antreprenorială și pasiune pentru educație.
+                Numele brandului îi poartă inițialele, inspirate de un copil
+                care a văzut dincolo de litere.
+              </p>
+            </div>
+            <div className="bg-cream rounded-3xl p-8 shadow-soft text-center">
+              <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-orange-light/20 flex items-center justify-center text-4xl font-display font-bold text-orange-dark">
+                C
+              </div>
+              <h3 className="font-display text-2xl font-bold text-green-dark mb-2">
+                Carmen
+              </h3>
+              <p className="text-foreground/60 text-sm leading-relaxed">
+                Mama cu suflet pedagog și dragoste pentru copii. Împreună cu
+                Michelle, a transformat un spațiu cunoscut într-un loc nou,
+                cald și plin de viață.
+              </p>
             </div>
           </div>
         </div>
