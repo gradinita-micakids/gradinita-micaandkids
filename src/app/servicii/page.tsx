@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const services = [
   {
     title: "Creșă",
-    age: "1-3 ani",
+    age: "1,5-3 ani",
     desc: "Îngrijire afectuoasă și activități stimulative pentru cei mici. Spațiu sigur, curat și modern, cu personal dedicat și empatic.",
     features: ["Program flexibil", "Activități senzoriale", "Alimentație sănătoasă", "Somn ghidat"],
     image: "/images/reference/baby-1.png",

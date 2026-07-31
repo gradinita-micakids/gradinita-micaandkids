@@ -8,7 +8,7 @@ import Image from "next/image";
 const services = [
   {
     title: "Creșă",
-    desc: "Îngrijire afectuoasă și activități stimulative pentru cei mici, de la 1 an.",
+    desc: "Îngrijire afectuoasă și activități stimulative pentru cei mici, 1,5-3 ani.",
     image: "/images/reference/baby-1.png",
     color: "bg-yellow/10",
     accent: "text-yellow",

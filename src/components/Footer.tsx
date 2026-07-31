@@ -44,7 +44,7 @@ export default function Footer() {
               <li className="text-white/70 text-sm">Strada Sfântul Gheorghe 5B, Popești Leordeni, Ilfov</li>
               <li><a href="tel:0740467056" className="text-white/70 hover:text-yellow no-underline transition-colors text-sm">0740 467 056</a></li>
               <li><a href="tel:0762119691" className="text-white/70 hover:text-yellow no-underline transition-colors text-sm">0762 119 691</a></li>
-              <li><a href="mailto:contact@gradinitamicaandkids.ro" className="text-white/70 hover:text-yellow no-underline transition-colors text-sm">contact@gradinitamicaandkids.ro</a></li>
+              <li><a href="mailto:office@gradinitamicaandkids.ro" className="text-white/70 hover:text-yellow no-underline transition-colors text-sm">office@gradinitamicaandkids.ro</a></li>
             </ul>
           </div>
 
@@ -63,10 +63,18 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white/50 text-xs">
-            © {new Date().getFullYear()} Mica and Kids. Toate drepturile rezervate.
+          <p className="text-white text-xs">
+            © 2026 Mica and Kids. Toate drepturile rezervate. Realizat de{" "}
+            <a
+              href="https://forsite.ro"
+              target="_blank"
+              rel="noopener noreferrer dofollow"
+              className="text-white text-xs font-bold no-underline hover:text-yellow transition-colors"
+            >
+              FORSITE.RO
+            </a>
           </p>
-          <p className="text-yellow/70 text-xs font-bold">
+          <p className="text-white text-xs font-bold">
             Avem grijă de cei mici.
           </p>
         </div>

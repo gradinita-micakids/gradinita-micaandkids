@@ -34,9 +34,10 @@ export default function DespreNoiPage() {
               Carmen cu sufletul pedagog și dragostea pentru cei mici.
             </p>
             <p className="text-foreground/70 text-lg leading-relaxed mb-6">
-              Numele brandului a fost inspirat spontan de un copil care a asociat
-              primele litere din numele Michelle — „Mica”. Un nume simplu, cald,
-              care prinde viață alături de „Kids”, copiii din centrul universului nostru.
+              Numele brandului a fost inspirat spontan, asociind
+              primele litere din numele Michelle și Carmen — „Mi" + „Ca" = „Mica".
+              O poveste frumoasă, născută din lumea celor mici, care prinde viață
+              alături de „Kids", copiii din centrul universului nostru.
             </p>
             <p className="text-foreground/70 text-lg leading-relaxed mb-8">
               Am preluat cu drag spațiul în care copiii noștri au făcut primii pași

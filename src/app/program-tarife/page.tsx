@@ -18,14 +18,14 @@ const traditionalPrograms = [
     type: "Program mediu",
     schedule: "07:30 - 16:30",
     price: "2350 lei",
-    features: ["Mic dejun", "Prânz", "Gustare", "Activități de dimineață", "Odihnă / somn"],
+    features: ["Mic dejun", "Activități educative și recreative", "Gustare", "Prânz", "Odihnă / somn"],
     popular: true,
   },
   {
     type: "Program lung",
     schedule: "07:30 - 18:30",
     price: "2500 lei",
-    features: ["Mic dejun", "Prânz", "Gustare", "Activități de dimineață", "Odihnă / somn", "Activități de după-amiază"],
+    features: ["Mic dejun", "Activități educative și recreative", "Gustare", "Prânz", "Odihnă / somn", "Gustare după-amiază", "Activități"],
   },
 ];
 
