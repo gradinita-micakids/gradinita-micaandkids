@@ -144,7 +144,7 @@ export default function DespreNoiPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <div className="relative w-48 h-48 mx-auto mb-8">
             <Image
-              src="/images/mascota/Mica Albinuța pictor.png"
+              src="/images/mascota/albinuta.webp"
               alt="Mica — mascota"
               width={200}
               height={200}

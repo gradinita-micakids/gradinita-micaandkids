@@ -16,7 +16,7 @@ const galleryItems = [
   { src: "/images/reference/doctor.png", alt: "Echipa noastră", cat: "Echipa" },
   { src: "/images/reference/stab-img.png", alt: "Spațiul nostru", cat: "Spațiu" },
   { src: "/images/reference/render-final.png", alt: "Aventură educațională", cat: "Natură" },
-  { src: "/images/mascota/Mica Albinuța Dansatoarea.png", alt: "Mascota Mica dansând", cat: "Mascota" },
+  { src: "/images/mascota/albinuta.webp", alt: "Mascota Mica dansând", cat: "Mascota" },
   { src: "/images/mascota/Mica Albinuța pictor.png", alt: "Mascota Mica pictând", cat: "Mascota" },
   { src: "/images/mascota/Mica Albinuța se joacă.png", alt: "Mascota Mica jucându-se", cat: "Mascota" },
   { src: "/images/reference/finger.png", alt: "Detalii mici", cat: "Activități" },

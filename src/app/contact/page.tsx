@@ -64,7 +64,7 @@ export default function ContactPage() {
             <div className="relative bg-green-light/10 rounded-3xl p-8 shadow-soft flex justify-center">
               <div className="relative w-48 h-48">
                 <Image
-                  src="/images/mascota/Mica Albinuța Dansatoarea.png"
+                  src="/images/mascota/albinuta.webp"
                   alt="Mica — mascota"
                   width={200}
                   height={200}

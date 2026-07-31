@@ -52,7 +52,7 @@ export default function Footer() {
           <div className="flex justify-center md:justify-end">
             <div className="relative w-32 h-32">
               <Image
-                src="/images/mascota/Mica Albinuța pictor.png"
+                src="/images/mascota/albinuta.webp"
                 alt="Mica — mascota"
                 width={128}
                 height={128}

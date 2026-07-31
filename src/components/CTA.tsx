@@ -28,7 +28,7 @@ export default function CTA() {
           className="relative w-48 h-48 mx-auto mb-8"
         >
           <Image
-            src="/images/mascota/Mica Albinuța Dansatoarea.png"
+            src="/images/mascota/albinuta.webp"
             alt="Mica — mascota"
             width={200}
             height={200}

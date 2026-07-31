@@ -71,7 +71,7 @@ export default function PetreceriPage() {
           <div className="relative bg-cream rounded-3xl p-8 shadow-soft">
             <div className="relative w-full h-80 flex items-center justify-center">
               <Image
-                src="/images/mascota/Mica Albinuța Dansatoarea.png"
+                src="/images/mascota/albinuta.webp"
                 alt="Petreceri Mica and Kids"
                 width={400}
                 height={350}

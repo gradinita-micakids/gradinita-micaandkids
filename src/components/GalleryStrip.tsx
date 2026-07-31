@@ -10,7 +10,7 @@ const galleryImages = [
   { src: "/images/reference/girl-4.png", alt: "Grădiniță" },
   { src: "/images/reference/skater-1.png", alt: "Afterschool" },
   { src: "/images/reference/about-first.png", alt: "Activități în natură" },
-  { src: "/images/mascota/Mica Albinuța Dansatoarea.png", alt: "Mascota Mica" },
+  { src: "/images/mascota/albinuta.webp", alt: "Mascota Mica" },
   { src: "/images/reference/stab-img.png", alt: "Echipa" },
 ];
 
