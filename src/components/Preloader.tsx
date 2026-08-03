@@ -6,8 +6,30 @@ export default function Preloader() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 3000);
-    return () => clearTimeout(timer);
+    const MIN_DISPLAY = 800;
+    const MAX_DISPLAY = 2000;
+    const start = performance.now();
+
+    const hide = () => {
+      const elapsed = performance.now() - start;
+      const wait = Math.max(0, MIN_DISPLAY - elapsed);
+      setTimeout(() => {
+        setLoading(false);
+        window.dispatchEvent(new Event("preloader-done"));
+      }, wait);
+    };
+
+    if (document.readyState === "complete") {
+      hide();
+    } else {
+      window.addEventListener("load", hide, { once: true });
+    }
+
+    const fallback = setTimeout(hide, MAX_DISPLAY);
+    return () => {
+      window.removeEventListener("load", hide);
+      clearTimeout(fallback);
+    };
   }, []);
 
   return (

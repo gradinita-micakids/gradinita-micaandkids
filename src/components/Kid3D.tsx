@@ -108,9 +108,24 @@ export default function Kid3D() {
     window.addEventListener("mousemove", onMouseMove, { passive: true });
 
     let lastParX = 999, lastParY = 999, lastRotY = 999;
+    let rafId: number | null = null;
+    let isVisible = !document.hidden;
+
+    const onVisibilityChange = () => {
+      isVisible = !document.hidden;
+      if (isVisible && rafId === null) {
+        needsRender = true;
+        rafId = requestAnimationFrame(animate);
+      } else if (!isVisible && rafId !== null) {
+        cancelAnimationFrame(rafId);
+        rafId = null;
+      }
+    };
+    document.addEventListener("visibilitychange", onVisibilityChange);
 
     const animate = () => {
-      requestAnimationFrame(animate);
+      if (!isVisible) { rafId = null; return; }
+      rafId = requestAnimationFrame(animate);
 
       parX += (mouseX - parX) * 0.05;
       parY += (mouseY - parY) * 0.05;
@@ -153,6 +168,8 @@ export default function Kid3D() {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("mousemove", onMouseMove);
       window.removeEventListener("resize", onResize);
+      document.removeEventListener("visibilitychange", onVisibilityChange);
+      if (rafId !== null) cancelAnimationFrame(rafId);
       if (mount.contains(renderer.domElement)) {
         mount.removeChild(renderer.domElement);
       }

@@ -2,8 +2,31 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
 export default function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [videoReady, setVideoReady] = useState(false);
+
+  useEffect(() => {
+    const startVideo = () => {
+      setVideoReady(true);
+      const v = videoRef.current;
+      if (v) {
+        v.load();
+        v.play().catch(() => {});
+      }
+    };
+
+    window.addEventListener("preloader-done", startVideo, { once: true });
+    const fallback = setTimeout(startVideo, 2500);
+
+    return () => {
+      window.removeEventListener("preloader-done", startVideo);
+      clearTimeout(fallback);
+    };
+  }, []);
+
   return (
     <section className="relative pt-28 pb-16 overflow-hidden bg-white/80">
       <div className="relative max-w-7xl mx-auto px-6">
@@ -67,12 +90,13 @@ export default function Hero() {
           >
             <div className="relative w-full max-w-[180px] lg:max-w-[280px] mx-auto">
               <video
+                ref={videoRef}
                 src="/videos/micabun.mp4"
-                autoPlay
                 muted
                 loop
                 playsInline
-                className="w-full h-auto object-contain animate-float"
+                preload="none"
+                className={`w-full h-auto object-contain animate-float transition-opacity duration-500 ${videoReady ? "opacity-100" : "opacity-0"}`}
               />
             </div>
           </motion.div>
