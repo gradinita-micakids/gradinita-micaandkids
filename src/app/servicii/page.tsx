@@ -25,7 +25,7 @@ const services = [
     age: "1,5-3 ani",
     desc: "Îngrijire afectuoasă și activități stimulative pentru cei mici. Spațiu sigur, curat și modern, cu personal dedicat și empatic.",
     features: ["Program flexibil", "Activități senzoriale", "Alimentație sănătoasă", "Somn ghidat"],
-    image: "/images/reference/baby-1.png",
+    image: "/images/reference/baby-1.webp",
     color: "bg-yellow/10",
     accent: "text-yellow",
   },
@@ -34,7 +34,7 @@ const services = [
     age: "3-6 ani",
     desc: "Învățare prin joacă în aer liber, cu programe educaționale moderne. Conexiune cu natura, animale și activități interactive.",
     features: ["Activități outdoor", "Limbi străine", "Arte și creativitate", "Îngrijire animale"],
-    image: "/images/reference/girl-4.png",
+    image: "/images/reference/girl-4.webp",
     color: "bg-green-light/10",
     accent: "text-green-dark",
   },
@@ -43,7 +43,7 @@ const services = [
     age: "6-12 ani",
     desc: "Sprijin pentru teme, activități creative și dezvoltare personală. Un loc unde copiii se simt ca acasă după școală.",
     features: ["Ajutor pentru teme", "Activități creative", "Sport și mișcare", "Socializare"],
-    image: "/images/reference/skater-1.png",
+    image: "/images/reference/skater-1.webp",
     color: "bg-orange-light/10",
     accent: "text-orange-dark",
   },
@@ -52,7 +52,7 @@ const services = [
     age: "Toate vârstele",
     desc: "Aventuri în natură, tabere tematice și experiențe de tip sleepover. Copiii descoperă lumea într-un mod sigur și distractiv.",
     features: ["Tabere de vară", "Excursii educaționale", "Sleepover", "Activități în natură"],
-    image: "/images/reference/about-first.png",
+    image: "/images/reference/about-first.webp",
     color: "bg-blue/10",
     accent: "text-blue",
   },
@@ -145,14 +145,14 @@ export default function ServiciiPage() {
                 i % 2 === 1 ? "lg:[direction:rtl]" : ""
               }`}
             >
-              <div className={`relative ${s.color} rounded-3xl p-8 shadow-soft [direction:ltr]`}>
-                <div className="relative w-full h-64 flex items-center justify-center">
+              <div className={`relative ${s.color} rounded-2xl overflow-hidden shadow-soft [direction:ltr]`}>
+                <div className="relative w-full h-64">
                   <Image
                     src={s.image}
                     alt={`Mica and Kids — ${s.title} pentru copii în Popești Leordeni`}
-                    width={350}
-                    height={300}
-                    className="w-full h-full object-contain"
+                    width={600}
+                    height={400}
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>

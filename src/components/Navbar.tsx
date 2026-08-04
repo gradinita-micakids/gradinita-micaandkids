@@ -46,7 +46,7 @@ export default function Navbar() {
         <Link href="/" onClick={closeMobile} className="no-underline flex items-center">
           <Image
             src="/images/logo/logo-mica.png"
-            alt="Mica and Kids"
+            alt="Logo Mica and Kids — grădiniță și creșă în Popești Leordeni, Ilfov"
             width={160}
             height={48}
             className="object-contain"

@@ -100,14 +100,14 @@ export default function DespreNoiPage() {
               Vino să ne cunoști →
             </Link>
           </div>
-          <div className="relative bg-cream rounded-3xl p-8 shadow-soft">
-            <div className="relative w-full h-80 flex items-center justify-center">
+          <div className="relative rounded-2xl overflow-hidden shadow-soft">
+            <div className="relative w-full h-80">
               <Image
-                src="/images/reference/about-first.png"
+                src="/images/reference/about-first.webp"
                 alt="Mica and Kids — grădiniță în Popești Leordeni, Ilfov"
-                width={400}
-                height={350}
-                className="w-full h-full object-contain"
+                width={600}
+                height={400}
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

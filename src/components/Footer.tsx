@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <Image
               src="/images/logo/logo-mica.png"
-              alt="Mica and Kids"
+              alt="Logo Mica and Kids — grădiniță și creșă în Popești Leordeni, Ilfov"
               width={160}
               height={48}
               className="object-contain mb-4 rounded-lg bg-white/95 p-2"
@@ -65,7 +65,7 @@ export default function Footer() {
             <div className="relative w-32 h-32">
               <Image
                 src="/images/mascota/albinuta.webp"
-                alt="Mica — mascota"
+                alt="Albinuța Mica — mascota grădiniței Mica and Kids din Popești Leordeni"
                 width={128}
                 height={128}
                 className="w-full h-full object-contain"

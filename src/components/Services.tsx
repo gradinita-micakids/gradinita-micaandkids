@@ -9,28 +9,28 @@ const services = [
   {
     title: "Creșă",
     desc: "Îngrijire afectuoasă și activități stimulative pentru cei mici, 1,5-3 ani.",
-    image: "/images/reference/baby-1.png",
+    image: "/images/reference/baby-1.webp",
     color: "bg-yellow/10",
     accent: "text-yellow",
   },
   {
     title: "Grădiniță",
     desc: "Învățare prin joacă în aer liber, cu programe educaționale moderne.",
-    image: "/images/reference/girl-4.png",
+    image: "/images/reference/girl-4.webp",
     color: "bg-green-light/10",
     accent: "text-green-dark",
   },
   {
     title: "Afterschool",
     desc: "Sprijin pentru teme, activități creative și dezvoltare personală.",
-    image: "/images/reference/skater-1.png",
+    image: "/images/reference/skater-1.webp",
     color: "bg-orange-light/10",
     accent: "text-orange-dark",
   },
   {
     title: "Tabere & Excursii",
     desc: "Aventuri în natură, tabere și experiențe de tip sleepover.",
-    image: "/images/reference/about-first.png",
+    image: "/images/reference/about-first.webp",
     color: "bg-blue/10",
     accent: "text-blue",
   },
@@ -67,15 +67,15 @@ export default function Services() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.1, ease: [0.25, 0.4, 0.25, 1] }}
               whileHover={{ y: -8, transition: { duration: 0.2 } }}
-              className={`group relative ${s.color} rounded-3xl p-8 cursor-pointer shadow-soft hover:shadow-soft-lg transition-shadow`}
+              className={`group relative ${s.color} rounded-2xl overflow-hidden cursor-pointer shadow-soft hover:shadow-soft-lg transition-shadow pb-6 px-6`}
             >
-              <div className="relative w-full h-40 mb-6 flex items-center justify-center">
+              <div className="relative w-full h-40 mb-6">
                 <Image
                   src={s.image}
-                  alt={s.title}
-                  width={200}
+                  alt={`Mica and Kids — ${s.title} pentru copii în Popești Leordeni, Ilfov`}
+                  width={300}
                   height={200}
-                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
               <h3 className={`font-display text-xl font-bold ${s.accent} mb-2`}>

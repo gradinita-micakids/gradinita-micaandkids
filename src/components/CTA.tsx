@@ -29,7 +29,7 @@ export default function CTA() {
         >
           <Image
             src="/images/mascota/albinuta.webp"
-            alt="Mica — mascota"
+            alt="Albinuța Mica — mascota grădiniței Mica and Kids din Popești Leordeni"
             width={200}
             height={200}
             className="w-full h-full object-contain animate-float"

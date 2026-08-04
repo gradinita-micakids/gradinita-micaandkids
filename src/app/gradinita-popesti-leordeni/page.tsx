@@ -116,14 +116,14 @@ export default function GradinitaPopestiLeordeniPage() {
               Programează o vizită →
             </Link>
           </div>
-          <div className="relative bg-cream rounded-3xl p-8 shadow-soft">
-            <div className="relative w-full h-80 flex items-center justify-center">
+          <div className="relative rounded-2xl overflow-hidden shadow-soft">
+            <div className="relative w-full h-80">
               <Image
-                src="/images/reference/girl-4.png"
+                src="/images/reference/girl-4.webp"
                 alt="Grădiniță Mica and Kids — activități educaționale în aer liber pentru copii 3-6 ani în Popești Leordeni"
-                width={350}
-                height={300}
-                className="object-contain"
+                width={600}
+                height={400}
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

@@ -73,7 +73,7 @@ function ZigZagItem({ title, text, image, cta, href, reverse, index }: {
           <div className="relative w-full h-80">
             <Image
               src={image}
-              alt={title}
+              alt={`${title} — grădinița Mica and Kids din Popești Leordeni, Ilfov`}
               width={600}
               height={400}
               className="w-full h-full object-cover"
