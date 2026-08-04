@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import GalleryGrid from "@/components/GalleryGrid";
 
 export const metadata: Metadata = {
   title: "Galerie Grădiniță Popești Leordeni",
@@ -13,23 +13,23 @@ export const metadata: Metadata = {
     description:
       "Activități în aer liber, natură, animale și multă bucurie în Popești Leordeni, Ilfov.",
     url: "https://gradinitamicaandkids.ro/galerie",
-    images: ["/images/mascota/albinuta.webp"],
+    images: ["/images/galerie/echipa-gradinita-mica-kids.webp"],
   },
 };
 
 const galleryItems = [
-  { src: "/images/reference/baby-1.png", alt: "Creșă Mica and Kids — îngrijire copii mici în Popești Leordeni", cat: "Creșă" },
-  { src: "/images/reference/girl-4.png", alt: "Grădiniță Mica and Kids — activități educaționale în aer liber Popești Leordeni", cat: "Grădiniță" },
-  { src: "/images/reference/skater-1.png", alt: "Afterschool Mica and Kids — sport și mișcare pentru copii Popești Leordeni", cat: "Afterschool" },
-  { src: "/images/reference/about-first.png", alt: "Natură și explorare — activități outdoor pentru copii la grădinița Mica and Kids Popești Leordeni", cat: "Natură" },
-  { src: "/images/reference/services-header.png", alt: "Activități în aer liber la grădinița Mica and Kids din Popești Leordeni", cat: "Activități" },
-  { src: "/images/reference/doctor.png", alt: "Echipa dedicată Mica and Kids — personal calificat pentru copii Popești Leordeni", cat: "Echipa" },
-  { src: "/images/reference/stab-img.png", alt: "Spațiul grădiniței Mica and Kids — mediu sigur și modern în Popești Leordeni", cat: "Spațiu" },
-  { src: "/images/reference/render-final.png", alt: "Aventură educațională în natură la grădinița Mica and Kids Popești Leordeni", cat: "Natură" },
-  { src: "/images/mascota/albinuta.webp", alt: "Albinuța Mica — mascota grădiniței Mica and Kids Popești Leordeni", cat: "Mascota" },
-  { src: "/images/mascota/Mica Albinuța pictor.png", alt: "Albinuța Mica pictând — activități creative la grădinița Mica and Kids Popești Leordeni", cat: "Mascota" },
-  { src: "/images/mascota/Mica Albinuța se joacă.png", alt: "Albinuța Mica jucându-se — învățare prin joacă la grădinița Mica and Kids Popești Leordeni", cat: "Mascota" },
-  { src: "/images/reference/finger.png", alt: "Activități senzoriale pentru copii la grădinița Mica and Kids Popești Leordeni", cat: "Activități" },
+  { src: "/images/galerie/activitati-creative-copii-gradinita.webp", alt: "Activități creative pentru copii la grădinița Mica and Kids Popești Leordeni — ateliere de pictură și manualități", cat: "Activități" },
+  { src: "/images/galerie/joaca-aer-liber-gradinita-popesti-leordeni.webp", alt: "Copii jucându-se în aer liber la grădinița Mica and Kids din Popești Leordeni, Ilfov", cat: "Aer liber" },
+  { src: "/images/galerie/explorare-natura-copii-gradinita.webp", alt: "Explorare în natură pentru copii la grădinița Mica and Kids Popești Leordeni — activități educative outdoor", cat: "Natură" },
+  { src: "/images/galerie/curte-gradinita-popesti-leordeni.webp", alt: "Curtea grădiniței Mica and Kids din Popești Leordeni — spațiu verde pentru joacă și învățare", cat: "Spațiu" },
+  { src: "/images/galerie/animale-copii-gradinita-mica-kids.webp", alt: "Copii interacționând cu animale la grădinița Mica and Kids Popești Leordeni — activități cu animale", cat: "Natură" },
+  { src: "/images/galerie/echipa-gradinita-mica-kids.webp", alt: "Echipa educatoarelor de la grădinița Mica and Kids Popești Leordeni — personal calificat și dedicat", cat: "Echipa" },
+  { src: "/images/galerie/activitati-senzoriale-copii.webp", alt: "Activități senzoriale pentru copii la grădinița Mica and Kids Popești Leordeni — dezvoltare prin simțuri", cat: "Activități" },
+  { src: "/images/galerie/joaca-gradinita-popeesti-leordeni.webp", alt: "Joacă structurată la grădinița Mica and Kids Popești Leordeni — învățare prin joc", cat: "Grădiniță" },
+  { src: "/images/galerie/petreceri-gradinita-mica-kids.webp", alt: "Petreceri tematice pentru copii la grădinița Mica and Kids Popești Leordeni — evenimente și sărbători", cat: "Petreceri" },
+  { src: "/images/galerie/gradinita-natura-popeesti-leordeni.webp", alt: "Grădinița Mica and Kids Popești Leordeni — activități în natură și grădinărit pentru copii", cat: "Natură" },
+  { src: "/images/galerie/atelier-creativ-copii-gradinita.webp", alt: "Atelier creativ pentru copii la grădinița Mica and Kids Popești Leordeni — dezvoltarea creativității", cat: "Activități" },
+  { src: "/images/galerie/activitati-aer-liber-gradinita.webp", alt: "Activități în aer liber la grădinița Mica and Kids din Popești Leordeni — mișcare și sport pentru copii", cat: "Aer liber" },
 ];
 
 export default function GaleriePage() {
@@ -65,27 +65,7 @@ export default function GaleriePage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {galleryItems.map((item, i) => (
-            <div
-              key={i}
-              className="group relative bg-cream rounded-2xl p-6 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-soft-lg"
-            >
-              <div className="relative w-full h-40 flex items-center justify-center mb-3">
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  width={200}
-                  height={200}
-                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
-                />
-              </div>
-              <p className="text-center text-xs font-bold text-green-dark uppercase tracking-wider">
-                {item.cat}
-              </p>
-            </div>
-          ))}
-        </div>
+        <GalleryGrid items={galleryItems} />
       </div>
     </div>
   );

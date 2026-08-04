@@ -9,7 +9,7 @@ const sections = [
   {
     title: "Învățare prin joacă în aer liber",
     text: "Activitățile noastre interactive se desfășoară în exterior — inclusiv servirea meselor. Copiii explorează, se joacă și învață prin experiențe directe, nu din cărți.",
-    image: "/images/aerliber.png",
+    image: "/images/galerie/activitati-creative-copii-gradinita.webp",
     cta: "Despre noi",
     href: "/despre-noi",
     reverse: false,
@@ -17,7 +17,7 @@ const sections = [
   {
     title: "Conexiune cu natura și animalele",
     text: "Copiii învață responsabilitate prin grija oferită animalelor. Grădina, animalele și activitățile în aer liber sunt pilonii educației noastre.",
-    image: "/images/natura.png",
+    image: "/images/galerie/gradina-natura-popesti-leordeni.webp",
     cta: "Vezi galeria",
     href: "/galerie",
     reverse: true,
@@ -25,7 +25,7 @@ const sections = [
   {
     title: "Echipa noastră — empatie și profesionalism",
     text: "Ne bazăm pe implicare totală, iubire față de copii și personal ghidat de empatie, flexibilitate și profesionalism. Fiecare copil este unic și merită atenție individuală.",
-    image: "/images/echipamica.png",
+    image: "/images/galerie/echipa-gradinita-mica-kids.webp",
     cta: "Contactează-ne",
     href: "/contact",
     reverse: false,
@@ -69,14 +69,14 @@ function ZigZagItem({ title, text, image, cta, href, reverse, index }: {
         transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
         className="relative [direction:ltr]"
       >
-        <div className="relative bg-cream rounded-3xl p-8 shadow-soft">
-          <div className="relative w-full h-72 flex items-center justify-center">
+        <div className="relative bg-cream rounded-2xl overflow-hidden shadow-soft">
+          <div className="relative w-full h-80">
             <Image
               src={image}
               alt={title}
-              width={400}
-              height={300}
-              className="w-full h-full object-contain"
+              width={600}
+              height={400}
+              className="w-full h-full object-cover"
             />
           </div>
         </div>

@@ -6,12 +6,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 const galleryImages = [
-  { src: "/images/reference/baby-1.png", alt: "Creșă" },
-  { src: "/images/reference/girl-4.png", alt: "Grădiniță" },
-  { src: "/images/reference/skater-1.png", alt: "Afterschool" },
-  { src: "/images/reference/about-first.png", alt: "Activități în natură" },
-  { src: "/images/mascota/albinuta.webp", alt: "Mascota Mica" },
-  { src: "/images/reference/stab-img.png", alt: "Echipa" },
+  { src: "/images/galerie/activitati-creative-copii-gradinita.webp", alt: "Activități creative pentru copii la grădinița Mica and Kids Popești Leordeni" },
+  { src: "/images/galerie/joaca-aer-liber-gradinita-popesti-leordeni.webp", alt: "Copii jucându-se în aer liber la grădinița Mica and Kids din Popești Leordeni" },
+  { src: "/images/galerie/explorare-natura-copii-gradinita.webp", alt: "Explorare în natură pentru copii la grădinița Mica and Kids Popești Leordeni" },
+  { src: "/images/galerie/curte-gradinita-popesti-leordeni.webp", alt: "Curtea grădiniței Mica and Kids din Popești Leordeni" },
+  { src: "/images/galerie/animale-copii-gradinita-mica-kids.webp", alt: "Copii interacționând cu animale la grădinița Mica and Kids Popești Leordeni" },
+  { src: "/images/galerie/echipa-gradinita-mica-kids.webp", alt: "Echipa educatoarelor de la grădinița Mica and Kids Popești Leordeni" },
 ];
 
 export default function GalleryStrip() {
@@ -43,15 +43,15 @@ export default function GalleryStrip() {
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.4, delay: i * 0.08, ease: [0.25, 0.4, 0.25, 1] }}
               whileHover={{ y: -4, transition: { duration: 0.2 } }}
-              className="group relative bg-white rounded-2xl p-4 shadow-soft hover:shadow-soft-lg transition-shadow"
+              className="group relative rounded-xl overflow-hidden shadow-soft hover:shadow-soft-lg transition-shadow"
             >
-              <div className="relative w-full h-32 flex items-center justify-center">
+              <div className="relative w-full h-40">
                 <Image
                   src={img.src}
                   alt={img.alt}
-                  width={150}
-                  height={150}
-                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                  width={300}
+                  height={250}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
             </motion.div>
