@@ -52,6 +52,7 @@ export default function ContactPage() {
         areaServed: "Popești Leordeni, Ilfov",
         availableLanguage: ["Romanian"],
       },
+      sameAs: ["https://www.instagram.com/micaandkids/"],
     },
   };
 
@@ -108,6 +109,13 @@ export default function ContactPage() {
                   <div>
                   <p className="text-xs text-foreground/50 uppercase tracking-wider mb-1">Program</p>
                     <p className="text-foreground/80">Luni - Vineri: 07:00 - 19:00, conform <a href="https://www.edu.ro/" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-green-dark underline">programului educațional</a></p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="text-2xl">📷</span>
+                  <div>
+                    <p className="text-xs text-foreground/50 uppercase tracking-wider mb-1">Instagram</p>
+                    <a href="https://www.instagram.com/micaandkids/" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-green-dark no-underline">@micaandkids</a>
                   </div>
                 </li>
               </ul>
