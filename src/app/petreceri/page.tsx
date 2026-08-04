@@ -126,14 +126,14 @@ export default function PetreceriPage() {
               Rezervă o petrecere →
             </Link>
           </div>
-          <div className="relative bg-cream rounded-3xl p-8 shadow-soft">
-            <div className="relative w-full h-80 flex items-center justify-center">
+          <div className="relative rounded-2xl overflow-hidden shadow-soft">
+            <div className="relative w-full h-80">
               <Image
-                src="/images/mascota/albinuta.webp"
+                src="/images/galerie/curte-gradinita-popesti-leordeni.webp"
                 alt="Petreceri de copii la Mica and Kids — grădiniță Popești Leordeni"
-                width={400}
-                height={350}
-                className="w-full h-full object-contain animate-float"
+                width={600}
+                height={400}
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

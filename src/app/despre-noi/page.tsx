@@ -212,9 +212,8 @@ export default function DespreNoiPage() {
             Albinuța Mica
           </h2>
           <p className="text-foreground/70 text-lg leading-relaxed max-w-2xl mx-auto">
-            Mica reprezintă „fața" brandului, fiind mascota care însoțește copiii
-            în <Link href="/galerie" className="text-green-dark underline hover:text-green-light">activitățile zilnice</Link>. În calitate de albinuță curioasă și harnică,
-            ea reflectă legătura strânsă cu <a href="https://www.ppl.ro/" target="_blank" rel="noopener noreferrer" className="text-green-dark underline hover:text-green-light">natura</a> și acționează ca un ghid prietenos
+            Mascota brandului, o albinuță curioasă și harnică care însoțește copiii
+            în <Link href="/galerie" className="text-green-dark underline hover:text-green-light">activitățile zilnice</Link>. Ea reflectă legătura strânsă cu <a href="https://www.ppl.ro/" target="_blank" rel="noopener noreferrer" className="text-green-dark underline hover:text-green-light">natura</a> și îi ghidează prietenos
             în toate experiențele desfășurate, respectând standardele <a href="https://isjilfov.ro/" target="_blank" rel="noopener noreferrer" className="text-green-dark underline hover:text-green-light">Inspectoratului Școlar Ilfov</a>.
           </p>
         </div>

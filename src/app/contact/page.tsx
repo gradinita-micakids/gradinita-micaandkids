@@ -121,18 +121,6 @@ export default function ContactPage() {
               </ul>
             </div>
 
-            <div className="bg-cream rounded-3xl p-8 shadow-soft flex justify-center">
-              <div className="relative w-48 h-48">
-                <Image
-                  src="/images/mascota/albinuta.webp"
-                  alt="Albinuța Mica — mascota grădiniței Mica and Kids Popești Leordeni"
-                  width={200}
-                  height={200}
-                  className="w-full h-full object-contain animate-float"
-                />
-              </div>
-            </div>
-
             <div className="bg-cream rounded-3xl p-2 shadow-soft overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.123456!2d26.156!3d44.371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zU3RyYWRhIFPGk8OibnR1bCBHaGVvcmdlIDVCLCBQb3BlxZ90aSBMZW9yZGVuaSwgSWxmb3Y!5e0!3m2!1sro!2sro!4v1700000000000"
