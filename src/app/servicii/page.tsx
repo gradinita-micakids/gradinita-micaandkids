@@ -145,14 +145,14 @@ export default function ServiciiPage() {
                 i % 2 === 1 ? "lg:[direction:rtl]" : ""
               }`}
             >
-              <div className={`relative ${s.color} rounded-2xl overflow-hidden shadow-soft [direction:ltr]`}>
-                <div className="relative w-full h-64">
+              <div className={`relative ${s.color} rounded-3xl p-8 shadow-soft [direction:ltr]`}>
+                <div className="relative w-full h-64 flex items-center justify-center">
                   <Image
                     src={s.image}
                     alt={`Mica and Kids — ${s.title} pentru copii în Popești Leordeni`}
-                    width={600}
-                    height={400}
-                    className="w-full h-full object-cover"
+                    width={350}
+                    height={300}
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>

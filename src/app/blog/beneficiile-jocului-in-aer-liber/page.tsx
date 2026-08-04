@@ -113,14 +113,14 @@ export default function BeneficiileJoculuiInAerLiberPage() {
 
       {/* Imagine */}
       <div className="max-w-4xl mx-auto px-6 mb-16">
-        <div className="relative rounded-2xl overflow-hidden shadow-soft">
-          <div className="relative w-full h-72">
+        <div className="relative bg-cream rounded-3xl p-8 shadow-soft">
+          <div className="relative w-full h-72 flex items-center justify-center">
             <Image
               src="/images/reference/services-header.webp"
               alt="Copiii de la grădinița Mica and Kids jucându-se în aer liber în curtea din Popești Leordeni"
-              width={600}
-              height={400}
-              className="w-full h-full object-cover"
+              width={400}
+              height={300}
+              className="object-contain"
             />
           </div>
         </div>

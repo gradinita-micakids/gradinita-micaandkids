@@ -116,14 +116,14 @@ export default function AfterschoolPopestiLeordeniPage() {
               Programează o vizită →
             </Link>
           </div>
-          <div className="relative rounded-2xl overflow-hidden shadow-soft">
-            <div className="relative w-full h-80">
+          <div className="relative bg-cream rounded-3xl p-8 shadow-soft">
+            <div className="relative w-full h-80 flex items-center justify-center">
               <Image
                 src="/images/reference/skater-1.webp"
                 alt="Afterschool Mica and Kids — activități după școală pentru copii 6-12 ani în Popești Leordeni"
-                width={600}
-                height={400}
-                className="w-full h-full object-cover"
+                width={350}
+                height={300}
+                className="object-contain"
               />
             </div>
           </div>
