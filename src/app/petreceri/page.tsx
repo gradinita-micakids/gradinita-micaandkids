@@ -1,11 +1,22 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import FAQSection from "@/components/FAQSection";
+import FAQJsonLd from "@/components/FAQJsonLd";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Petreceri — Mica and Kids",
+  title: "Petreceri de copii în weekend",
   description:
-    "Închiriem locația Mica and Kids pentru petreceri de copii în weekend. Spațiu sigur, curat și distractiv pentru sărbătoriri de neuitat.",
+    "Închiriem locația Mica and Kids din Popești Leordeni pentru petreceri de copii în weekend. Spațiu sigur, curat și distractiv pentru sărbătoriri de neuitat.",
+  alternates: { canonical: "/petreceri" },
+  openGraph: {
+    title: "Petreceri copii weekend — Grădiniță Popești Leordeni | Mica and Kids",
+    description:
+      "Închiriem locația din Popești Leordeni pentru petreceri de copii în weekend.",
+    url: "https://gradinitamicaandkids.ro/petreceri",
+    images: ["/images/mascota/albinuta.webp"],
+  },
 };
 
 const features = [
@@ -42,8 +53,55 @@ const features = [
 ];
 
 export default function PetreceriPage() {
+  const eventJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: "Petreceri de copii în weekend — Mica and Kids Popești Leordeni",
+    description:
+      "Închiriere locație Mica and Kids pentru petreceri de copii în weekend. Spațiu sigur, curat și distractiv cu echipă dedicată.",
+    url: "https://gradinitamicaandkids.ro/petreceri",
+    location: {
+      "@type": "Place",
+      name: "Mica and Kids",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Strada Sfântul Gheorghe 5B",
+        addressLocality: "Popești Leordeni",
+        addressRegion: "Ilfov",
+        postalCode: "077160",
+        addressCountry: "RO",
+      },
+    },
+    offers: {
+      "@type": "Offer",
+      name: "Închiriere locație weekend",
+      price: "1000",
+      priceCurrency: "RON",
+      description: "4 ore — sală de joacă, curte exterioară, zonă catering, sistem audio.",
+      availability: "https://schema.org/InStock",
+    },
+    eventSchedule: {
+      "@type": "Schedule",
+      byDay: ["Saturday", "Sunday"],
+      startTime: "10:00",
+      endTime: "20:00",
+      duration: "PT4H",
+    },
+    organizer: {
+      "@type": "Organization",
+      name: "Mica and Kids",
+      telephone: "+40740467056",
+      email: "office@gradinitamicaandkids.ro",
+    },
+  };
+
   return (
     <div className="pt-28 pb-20 bg-white/80 min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(eventJsonLd) }}
+      />
+      <Breadcrumbs items={[{ name: "Petreceri", path: "/petreceri" }]} />
       {/* Hero */}
       <div className="max-w-7xl mx-auto px-6 mb-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -53,13 +111,13 @@ export default function PetreceriPage() {
               <span className="text-orange-dark">în weekend</span>
             </h1>
             <p className="text-foreground/70 text-lg leading-relaxed mb-6">
-              Transformăm sărbătorirea copilului tău într-o experiență de neuitat!
-              Închiriem locația Mica and Kids în weekenduri pentru petreceri
+              Transformăm sărbătorirea <a href="https://copii.gov.ro/" target="_blank" rel="noopener noreferrer" className="text-green-dark underline hover:text-green-light">copilului</a> tău într-o experiență de neuitat!
+              Închiriem locația Mica and Kids în weekenduri pentru <Link href="/servicii" className="text-green-dark underline hover:text-green-light">petreceri</Link>
               tematice, aniversări și evenimente private pentru cei mici.
             </p>
             <p className="text-foreground/70 text-lg leading-relaxed mb-8">
               Spațiu sigur, curat și plin de voie bună — cu echipă dedicată care
-              se ocupă de tot, ca tu să te bucuri de moment alături de copilul tău.
+              se ocupă de tot, ca tu să te bucuri de moment alături de <a href="https://copii.gov.ro/" target="_blank" rel="noopener noreferrer" className="text-green-dark underline hover:text-green-light">copilul</a> tău.
             </p>
             <Link
               href="/contact"
@@ -72,7 +130,7 @@ export default function PetreceriPage() {
             <div className="relative w-full h-80 flex items-center justify-center">
               <Image
                 src="/images/mascota/albinuta.webp"
-                alt="Petreceri Mica and Kids"
+                alt="Petreceri de copii la Mica and Kids — grădiniță Popești Leordeni"
                 width={400}
                 height={350}
                 className="w-full h-full object-contain animate-float"
@@ -143,7 +201,15 @@ export default function PetreceriPage() {
                   {f.title}
                 </h3>
                 <p className="text-foreground/60 text-sm leading-relaxed">
-                  {f.desc}
+                  {f.title === "Echipă dedicată" ? (
+                    <>Personalul nostru se ocupă de organizare, jocuri și <a href="https://isjilfov.ro/" target="_blank" rel="noopener noreferrer" className="text-green-dark underline hover:text-green-light">supravegherea copiilor</a> pe tot parcursul petrecerii.</>
+                  ) : f.title === "Decorațiuni & muzică" ? (
+                    <>Sistem audio, decorațiuni tematice și atmosferă festivă personalizată după preferințe, cu <Link href="/galerie" className="text-green-dark underline hover:text-green-light">activități</Link> pentru copii.</>
+                  ) : f.title === "Parcare & acces" ? (
+                    <>Parcare gratuită pentru invitați și acces ușor din orice zonă a <a href="https://www.ppl.ro/" target="_blank" rel="noopener noreferrer" className="text-green-dark underline hover:text-green-light">Bucureștiului</a>.</>
+                  ) : (
+                    f.desc
+                  )}
                 </p>
               </div>
             ))}
@@ -158,7 +224,7 @@ export default function PetreceriPage() {
             Hai să planuim petrecerea perfectă!
           </h2>
           <p className="text-foreground/70 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-            Contactează-ne pentru disponibilitate, personalizări și oferte
+            Contactează-ne pentru disponibilitate, personalizări și <Link href="/program-tarife" className="text-green-dark underline hover:text-green-light">oferte</Link>
             speciale. Ne ocupăm de tot — tu doar vine și te bucură!
           </p>
           <Link
@@ -169,6 +235,65 @@ export default function PetreceriPage() {
           </Link>
         </div>
       </div>
+
+      <FAQJsonLd
+        items={[
+          {
+            question: "Pot organiza o petrecere de copii la Mica and Kids?",
+            answer:
+              "Da! Închiriem locația noastră din Popești Leordeni în weekenduri pentru petreceri tematice, aniversări și evenimente private pentru copii.",
+          },
+          {
+            question: "Care este prețul pentru închirierea locației?",
+            answer:
+              "Închirierea locației pentru petreceri de copii în weekend costă 1000 lei pentru 4 ore. Include sală de joacă, curte exterioară, zonă de catering și sistem audio.",
+          },
+          {
+            question: "Ce facilități include locația pentru petreceri?",
+            answer:
+              "Locația include sală mare de joacă cu zonă indoor și curte exterioară, ateliere de pictură și modelaj, zonă de catering pentru tort și gustări, sistem audio și decorațiuni tematice.",
+          },
+          {
+            question: "Echipa se ocupă de organizarea petrecerii?",
+            answer:
+              "Da, personalul nostru se ocupă de organizare, jocuri și supravegherea copiilor pe tot parcursul petrecerii, ca tu să te bucuri de moment alături de copilul tău.",
+          },
+          {
+            question: "Pot aduce propriul catering?",
+            answer:
+              "Da, poți aduce propriul catering sau poți alege din partenerii noștri. Avem o zonă dedicată pentru tort, gustări și masă.",
+          },
+        ]}
+      />
+      <FAQSection
+        items={[
+          {
+            question: "Pot organiza o petrecere de copii la Mica and Kids?",
+            answer:
+              "Da! Închiriem locația noastră din Popești Leordeni în weekenduri pentru petreceri tematice, aniversări și evenimente private pentru copii.",
+          },
+          {
+            question: "Care este prețul pentru închirierea locației?",
+            answer:
+              "Închirierea locației pentru petreceri de copii în weekend costă 1000 lei pentru 4 ore. Include sală de joacă, curte exterioară, zonă de catering și sistem audio.",
+          },
+          {
+            question: "Ce facilități include locația pentru petreceri?",
+            answer:
+              "Locația include sală mare de joacă cu zonă indoor și curte exterioară, ateliere de pictură și modelaj, zonă de catering pentru tort și gustări, sistem audio și decorațiuni tematice.",
+          },
+          {
+            question: "Echipa se ocupă de organizarea petrecerii?",
+            answer:
+              "Da, personalul nostru se ocupă de organizare, jocuri și supravegherea copiilor pe tot parcursul petrecerii, ca tu să te bucuri de moment alături de copilul tău.",
+          },
+          {
+            question: "Pot aduce propriul catering?",
+            answer:
+              "Da, poți aduce propriul catering sau poți alege din partenerii noștri. Avem o zonă dedicată pentru tort, gustări și masă.",
+          },
+        ]}
+      />
     </div>
   );
 }

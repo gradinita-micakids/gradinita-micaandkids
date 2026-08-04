@@ -42,7 +42,7 @@ export default function CTA() {
         <p className="text-foreground/70 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
           Programează o vizită și descoperă spațiul nostru curat, modern și sigur.
           Te așteptăm cu drag să cunoști echipa și să vezi cum copiii noștri
-          învață prin joacă în natură.
+          învață prin <Link href="/petreceri" className="text-green-dark underline hover:text-green-light">joacă</Link> în <a href="https://www.ppl.ro/" target="_blank" rel="noopener noreferrer" className="text-green-dark underline hover:text-green-light">natură</a>.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

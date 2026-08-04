@@ -12,6 +12,7 @@ const navLinks = [
   { href: "/program-tarife", label: "Program & Tarife" },
   { href: "/petreceri", label: "Petreceri" },
   { href: "/galerie", label: "Galerie" },
+  { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
 

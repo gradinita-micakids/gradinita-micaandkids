@@ -45,10 +45,14 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-display text-5xl md:text-7xl font-bold text-green-dark leading-tight mb-6"
+              className="font-display font-bold text-green-dark leading-tight mb-6"
             >
-              Grădinița<br />
-              <span className="text-orange-dark">Mica and Kids</span>
+              <span className="block text-2xl md:text-3xl mb-1">
+                Grădiniță Popești Leordeni
+              </span>
+              <span className="block text-5xl md:text-7xl text-orange-dark">
+                Mica and Kids
+              </span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -56,8 +60,9 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-base md:text-lg text-foreground/70 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed"
             >
-              Transformăm curiozitatea naturală a copilului în cea mai frumoasă
-              aventură educațională, în aer liber și în armonie cu natura.
+              Grădinița Mica and Kids din Popești Leordeni transformă curiozitatea
+              naturală a <a href="https://copii.gov.ro/" target="_blank" rel="noopener noreferrer" className="text-green-dark underline hover:text-green-light">copilului</a> în cea mai frumoasă
+              aventură <a href="https://www.edu.ro/" target="_blank" rel="noopener noreferrer" className="text-green-dark underline hover:text-green-light">educațională</a>, în <Link href="/galerie" className="text-green-dark underline hover:text-green-light">aer liber</Link> și în armonie cu natura.
             </motion.p>
             {/* Buttons — shown inline on desktop, hidden on mobile (reordered below video) */}
             <motion.div

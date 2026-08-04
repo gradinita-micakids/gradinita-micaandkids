@@ -51,11 +51,11 @@ export default function Services() {
           className="text-center mb-12"
         >
           <h2 className="font-display text-3xl md:text-5xl font-bold text-green-dark mb-4">
-            Serviciile noastre
+            Serviciile grădiniței Mica and Kids
           </h2>
           <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
-            Mai mult decât o instituție de învățământ — un brand inovativ, orientat spre
-            trenduri internaționale, creativitate și bune maniere.
+            Mai mult decât o instituție de <Link href="/despre-noi" className="text-green-dark underline hover:text-green-light">învățământ</Link> — un brand inovativ, orientat spre
+            trenduri <a href="https://isjilfov.ro/" target="_blank" rel="noopener noreferrer" className="text-green-dark underline hover:text-green-light">internaționale</a>, creativitate și bune maniere.
           </p>
         </motion.div>
 

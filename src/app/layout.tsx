@@ -22,9 +22,61 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Mica and Kids — Grădiniță, Creșă & Afterschool în București",
+  metadataBase: new URL("https://gradinitamicaandkids.ro"),
+  title: {
+    default: "Grădiniță Popești Leordeni — Mica and Kids | Creșă & Afterschool Ilfov",
+    template: "%s | Mica and Kids",
+  },
   description:
-    "Mica and Kids — învățare prin joacă, libertate și conectare cu natura. Creșă, grădiniță, afterschool, tabere și excursii. Avem grijă de cei mici.",
+    "Grădiniță Popești Leordeni — Mica and Kids. Creșă, grădiniță, afterschool, tabere și excursii. Învățare prin joacă, natură și creativitate în Ilfov.",
+  keywords: [
+    "grădiniță Popești Leordeni",
+    "creșă Popești Leordeni",
+    "afterschool Popești Leordeni",
+    "grădiniță Ilfov",
+    "creșă Ilfov",
+    "grădiniță privată Ilfov",
+    "Mica and Kids",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  icons: {
+    icon: [{ url: "/favicon.webp", type: "image/webp" }],
+    apple: [{ url: "/favicon.webp", type: "image/webp" }],
+  },
+  openGraph: {
+    type: "website",
+    locale: "ro_RO",
+    siteName: "Mica and Kids",
+    title: "Grădiniță Popești Leordeni — Mica and Kids | Creșă & Afterschool Ilfov",
+    description:
+      "Grădiniță Popești Leordeni — creșă, grădiniță, afterschool, tabere și excursii. Învățare prin joacă și natură în Ilfov.",
+    url: "https://gradinitamicaandkids.ro",
+    images: [
+      {
+        url: "/images/mascota/albinuta.webp",
+        width: 500,
+        height: 500,
+        alt: "Albinuța Mica — mascota grădiniței Mica and Kids Popești Leordeni",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Grădiniță Popești Leordeni — Mica and Kids",
+    description:
+      "Creșă, grădiniță, afterschool în Popești Leordeni, Ilfov. Învățare prin joacă și natură.",
+    images: ["/images/mascota/albinuta.webp"],
+  },
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
 };
 
 export default function RootLayout({
