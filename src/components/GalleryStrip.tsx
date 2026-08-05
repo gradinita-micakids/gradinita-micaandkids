@@ -11,7 +11,7 @@ const galleryImages = [
   { src: "/images/galerie/explorare-natura-copii-gradinita.webp", alt: "Explorare în natură pentru copii la grădinița Mica and Kids Popești Leordeni" },
   { src: "/images/galerie/curte-gradinita-popesti-leordeni.webp", alt: "Curtea grădiniței Mica and Kids din Popești Leordeni" },
   { src: "/images/galerie/animale-copii-gradinita-mica-kids.webp", alt: "Copii interacționând cu animale la grădinița Mica and Kids Popești Leordeni" },
-  { src: "/images/galerie/echipa-gradinita-mica-kids.webp", alt: "Echipa educatoarelor de la grădinița Mica and Kids Popești Leordeni" },
+  { src: "/images/mascota/albinuta.webp", alt: "Albinuța Mica — mascota grădiniței Mica and Kids din Popești Leordeni" },
 ];
 
 export default function GalleryStrip() {

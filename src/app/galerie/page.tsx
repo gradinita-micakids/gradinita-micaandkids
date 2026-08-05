@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       "Activități în aer liber, natură, animale și multă bucurie în Popești Leordeni, Ilfov.",
     url: "https://gradinitamicaandkids.ro/galerie",
-    images: ["/images/galerie/echipa-gradinita-mica-kids.webp"],
+    images: ["/images/galerie/activitati-creative-copii-gradinita.webp"],
   },
 };
 
@@ -23,12 +23,10 @@ const galleryItems = [
   { src: "/images/galerie/explorare-natura-copii-gradinita.webp", alt: "Explorare în natură pentru copii la grădinița Mica and Kids Popești Leordeni — activități educative outdoor", cat: "Natură" },
   { src: "/images/galerie/curte-gradinita-popesti-leordeni.webp", alt: "Curtea grădiniței Mica and Kids din Popești Leordeni — spațiu verde pentru joacă și învățare", cat: "Spațiu" },
   { src: "/images/galerie/animale-copii-gradinita-mica-kids.webp", alt: "Copii interacționând cu animale la grădinița Mica and Kids Popești Leordeni — activități cu animale", cat: "Natură" },
-  { src: "/images/galerie/echipa-gradinita-mica-kids.webp", alt: "Echipa educatoarelor de la grădinița Mica and Kids Popești Leordeni — personal calificat și dedicat", cat: "Echipa" },
   { src: "/images/galerie/activitati-senzoriale-copii.webp", alt: "Activități senzoriale pentru copii la grădinița Mica and Kids Popești Leordeni — dezvoltare prin simțuri", cat: "Activități" },
   { src: "/images/galerie/joaca-gradinita-popeesti-leordeni.webp", alt: "Joacă structurată la grădinița Mica and Kids Popești Leordeni — învățare prin joc", cat: "Grădiniță" },
   { src: "/images/galerie/petreceri-gradinita-mica-kids.webp", alt: "Petreceri tematice pentru copii la grădinița Mica and Kids Popești Leordeni — evenimente și sărbători", cat: "Petreceri" },
   { src: "/images/galerie/gradinita-natura-popeesti-leordeni.webp", alt: "Grădinița Mica and Kids Popești Leordeni — activități în natură și grădinărit pentru copii", cat: "Natură" },
-  { src: "/images/galerie/atelier-creativ-copii-gradinita.webp", alt: "Atelier creativ pentru copii la grădinița Mica and Kids Popești Leordeni — dezvoltarea creativității", cat: "Activități" },
   { src: "/images/galerie/activitati-aer-liber-gradinita.webp", alt: "Activități în aer liber la grădinița Mica and Kids din Popești Leordeni — mișcare și sport pentru copii", cat: "Aer liber" },
 ];
 

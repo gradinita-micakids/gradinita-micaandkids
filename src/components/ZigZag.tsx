@@ -25,7 +25,8 @@ const sections = [
   {
     title: "Echipa noastră — empatie și profesionalism",
     text: "Ne bazăm pe implicare totală, iubire față de copii și personal ghidat de empatie, flexibilitate și profesionalism. Fiecare copil este unic și merită atenție individuală.",
-    image: "/images/galerie/echipa-gradinita-mica-kids.webp",
+    image: "/images/mascota/albinuta.webp",
+    contain: true,
     cta: "Contactează-ne",
     href: "/contact",
     reverse: false,
@@ -44,7 +45,7 @@ export default function ZigZag() {
   );
 }
 
-function ZigZagItem({ title, text, image, cta, href, reverse, index }: {
+function ZigZagItem({ title, text, image, cta, href, reverse, index, contain }: {
   title: string;
   text: string;
   image: string;
@@ -52,6 +53,7 @@ function ZigZagItem({ title, text, image, cta, href, reverse, index }: {
   href: string;
   reverse: boolean;
   index: number;
+  contain?: boolean;
 }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
@@ -76,7 +78,7 @@ function ZigZagItem({ title, text, image, cta, href, reverse, index }: {
               alt={`${title} — grădinița Mica and Kids din Popești Leordeni, Ilfov`}
               width={600}
               height={400}
-              className="w-full h-full object-cover"
+              className={`w-full h-full ${contain ? "object-contain" : "object-cover"}`}
             />
           </div>
         </div>
