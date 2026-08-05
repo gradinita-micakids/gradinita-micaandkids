@@ -18,6 +18,8 @@ export const metadata: Metadata = {
 };
 
 const galleryItems = [
+  { src: "/images/galerie/mica-exterior1.webp", alt: "Exteriorul grădiniței Mica and Kids din Popești Leordeni — curte și spațiu verde pentru copii", cat: "Spațiu" },
+  { src: "/images/galerie/mica-exterior2.webp", alt: "Curtea exterioară a grădiniței Mica and Kids din Popești Leordeni — zonă de joacă în aer liber", cat: "Spațiu" },
   { src: "/images/galerie/activitati-creative-copii-gradinita.webp", alt: "Activități creative pentru copii la grădinița Mica and Kids Popești Leordeni — ateliere de pictură și manualități", cat: "Activități" },
   { src: "/images/galerie/joaca-aer-liber-gradinita-popesti-leordeni.webp", alt: "Copii jucându-se în aer liber la grădinița Mica and Kids din Popești Leordeni, Ilfov", cat: "Aer liber" },
   { src: "/images/galerie/explorare-natura-copii-gradinita.webp", alt: "Explorare în natură pentru copii la grădinița Mica and Kids Popești Leordeni — activități educative outdoor", cat: "Natură" },
