@@ -36,6 +36,16 @@ export default function Home() {
     priceRange: "2000-2500 RON",
     description:
       "Grădiniță Popești Leordeni — Mica and Kids. Creșă, grădiniță, afterschool, tabere și excursii. Învățare prin joacă, natură și creativitate în Ilfov.",
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 44.371,
+      longitude: 26.156,
+    },
+    areaServed: {
+      "@type": "City",
+      name: "Popești Leordeni, Ilfov",
+    },
+    hasMap: "https://www.google.com/maps/search/?api=1&query=Strada+Sfantul+Gheorghe+5B+Popesti+Leordeni+Ilfov",
     sameAs: ["https://www.instagram.com/micaandkids/"],
   };
 

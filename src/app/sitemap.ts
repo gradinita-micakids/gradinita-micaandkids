@@ -2,53 +2,54 @@ import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://gradinitamicaandkids.ro";
+  const now = new Date();
 
   const routes = [
-    "",
-    "/despre-noi",
-    "/servicii",
-    "/program-tarife",
-    "/petreceri",
-    "/galerie",
-    "/contact",
-    "/cresa-popesti-leordeni",
-    "/gradinita-popesti-leordeni",
-    "/afterschool-popesti-leordeni",
-    "/gradinita-berceni",
-    "/cresa-berceni",
+    { path: "", changeFrequency: "weekly" as const, priority: 1.0 },
+    { path: "/despre-noi", changeFrequency: "monthly" as const, priority: 0.9 },
+    { path: "/servicii", changeFrequency: "monthly" as const, priority: 0.9 },
+    { path: "/program-tarife", changeFrequency: "monthly" as const, priority: 0.9 },
+    { path: "/gradinita-popesti-leordeni", changeFrequency: "monthly" as const, priority: 0.9 },
+    { path: "/cresa-popesti-leordeni", changeFrequency: "monthly" as const, priority: 0.9 },
+    { path: "/afterschool-popesti-leordeni", changeFrequency: "monthly" as const, priority: 0.8 },
+    { path: "/gradinita-berceni", changeFrequency: "monthly" as const, priority: 0.8 },
+    { path: "/cresa-berceni", changeFrequency: "monthly" as const, priority: 0.8 },
+    { path: "/petreceri", changeFrequency: "monthly" as const, priority: 0.7 },
+    { path: "/galerie", changeFrequency: "monthly" as const, priority: 0.7 },
+    { path: "/contact", changeFrequency: "yearly" as const, priority: 0.6 },
   ];
 
   const blogRoutes = [
-    "/blog",
-    "/blog/cum-alegi-gradinita",
-    "/blog/beneficiile-jocului-in-aer-liber",
-    "/blog/pregatirea-pentru-scoala",
-    "/blog/activitati-senzoriale-copii",
+    { path: "/blog", changeFrequency: "weekly" as const, priority: 0.7 },
+    { path: "/blog/cum-alegi-gradinita", changeFrequency: "monthly" as const, priority: 0.6 },
+    { path: "/blog/beneficiile-jocului-in-aer-liber", changeFrequency: "monthly" as const, priority: 0.6 },
+    { path: "/blog/pregatirea-pentru-scoala", changeFrequency: "monthly" as const, priority: 0.6 },
+    { path: "/blog/activitati-senzoriale-copii", changeFrequency: "monthly" as const, priority: 0.6 },
   ];
 
   const legalRoutes = [
-    "/privacy",
-    "/termeni",
+    { path: "/privacy", changeFrequency: "yearly" as const, priority: 0.3 },
+    { path: "/termeni", changeFrequency: "yearly" as const, priority: 0.3 },
   ];
 
   return [
-    ...routes.map((route) => ({
-      url: `${baseUrl}${route}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: route === "" ? 1 : 0.8,
+    ...routes.map((r) => ({
+      url: `${baseUrl}${r.path}`,
+      lastModified: now,
+      changeFrequency: r.changeFrequency,
+      priority: r.priority,
     })),
-    ...blogRoutes.map((route) => ({
-      url: `${baseUrl}${route}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: route === "/blog" ? 0.7 : 0.6,
+    ...blogRoutes.map((r) => ({
+      url: `${baseUrl}${r.path}`,
+      lastModified: now,
+      changeFrequency: r.changeFrequency,
+      priority: r.priority,
     })),
-    ...legalRoutes.map((route) => ({
-      url: `${baseUrl}${route}`,
-      lastModified: new Date(),
-      changeFrequency: "yearly" as const,
-      priority: 0.3,
+    ...legalRoutes.map((r) => ({
+      url: `${baseUrl}${r.path}`,
+      lastModified: now,
+      changeFrequency: r.changeFrequency,
+      priority: r.priority,
     })),
   ];
 }

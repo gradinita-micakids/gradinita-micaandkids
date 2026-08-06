@@ -70,11 +70,11 @@ export const metadata: Metadata = {
     images: ["/images/mascota/albinuta.webp"],
   },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
+      index: true,
+      follow: true,
     },
   },
 };
