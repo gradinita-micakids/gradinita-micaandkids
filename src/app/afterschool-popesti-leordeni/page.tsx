@@ -263,6 +263,26 @@ export default function AfterschoolPopestiLeordeniPage() {
         </div>
       </div>
 
+      {/* Cross-linking servicii */}
+      <div className="py-12 bg-white/80">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <Link href="/cresa-popesti-leordeni" className="bg-cream rounded-2xl p-6 shadow-soft hover:shadow-soft-lg transition-shadow no-underline">
+              <h3 className="font-display text-lg font-bold text-green-dark mb-2">Creșă în Popești Leordeni</h3>
+              <p className="text-sm text-foreground/60">Pentru copii 1,5-3 ani — îngrijire afectuoasă și activități stimulative</p>
+            </Link>
+            <Link href="/gradinita-popesti-leordeni" className="bg-cream rounded-2xl p-6 shadow-soft hover:shadow-soft-lg transition-shadow no-underline">
+              <h3 className="font-display text-lg font-bold text-green-dark mb-2">Grădiniță în Popești Leordeni</h3>
+              <p className="text-sm text-foreground/60">Pentru copii 3-6 ani — învățare prin joacă în aer liber și natură</p>
+            </Link>
+            <Link href="/program-tarife" className="bg-cream rounded-2xl p-6 shadow-soft hover:shadow-soft-lg transition-shadow no-underline">
+              <h3 className="font-display text-lg font-bold text-green-dark mb-2">Program & Tarife</h3>
+              <p className="text-sm text-foreground/60">Program scurt, mediu și lung — vezi tarifele și ce este inclus</p>
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* CTA */}
       <div className="py-20 bg-cream/80">
         <div className="max-w-4xl mx-auto px-6 text-center">

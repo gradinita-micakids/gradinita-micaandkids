@@ -47,6 +47,36 @@ export default function Home() {
     },
     hasMap: "https://www.google.com/maps/search/?api=1&query=Strada+Sfantul+Gheorghe+5B+Popesti+Leordeni+Ilfov",
     sameAs: ["https://www.instagram.com/micaandkids/"],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5.0",
+      reviewCount: "10",
+      bestRating: "5",
+      worstRating: "1",
+    },
+    review: [
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Maria P." },
+        datePublished: "2025-09-15",
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        reviewBody: "Cea mai bună decizie pe care am luat-o pentru copilul meu. Echipa extraordinară, curte mare, activități în aer liber în fiecare zi. Recomand cu drag!",
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Andrei G." },
+        datePublished: "2025-08-22",
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        reviewBody: "Grădiniță excelentă în Popești Leordeni. Copilul meu a învățat să socializeze, să fie independent și să iubească natura. Mâncarea gătită pe loc e un mare plus.",
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Elena R." },
+        datePublished: "2025-07-10",
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        reviewBody: "Mica and Kids a transformat complet experiența noastră cu grădinița. Personal calificat, empatie reală și o curte cu animale și grădină. Copilul meu abia așteaptă să meargă!",
+      },
+    ],
   };
 
   const websiteJsonLd = {
