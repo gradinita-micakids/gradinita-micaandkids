@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       "Închiriem locația din Popești Leordeni pentru petreceri de copii în weekend.",
     url: "https://gradinitamicaandkids.ro/petreceri",
-    images: ["/images/mascota/albinuta.webp"],
+    images: ["/images/og-default.webp"],
   },
 };
 

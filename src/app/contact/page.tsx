@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       "Contactează-ne pentru înscrieri, vizite și informații în Popești Leordeni, Ilfov.",
     url: "https://gradinitamicaandkids.ro/contact",
-    images: ["/images/mascota/albinuta.webp"],
+    images: ["/images/og-default.webp"],
   },
 };
 

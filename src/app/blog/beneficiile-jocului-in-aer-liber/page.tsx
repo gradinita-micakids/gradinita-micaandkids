@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       "De ce au copiii nevoie de joacă în aer liber în fiecare zi. Beneficii pentru dezvoltare, sănătate și somn.",
     url: "https://gradinitamicaandkids.ro/blog/beneficiile-jocului-in-aer-liber",
-    images: ["/images/mascota/albinuta.webp"],
+    images: ["/images/og-default.webp"],
   },
 };
 

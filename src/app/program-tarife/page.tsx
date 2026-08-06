@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "Program și tarife pentru creșă, grădiniță și afterschool în Popești Leordeni, Ilfov.",
     url: "https://gradinitamicaandkids.ro/program-tarife",
-    images: ["/images/mascota/albinuta.webp"],
+    images: ["/images/og-default.webp"],
   },
 };
 

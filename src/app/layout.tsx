@@ -56,10 +56,10 @@ export const metadata: Metadata = {
     url: "https://gradinitamicaandkids.ro",
     images: [
       {
-        url: "/images/mascota/albinuta.webp",
-        width: 500,
-        height: 500,
-        alt: "Albinuța Mica — mascota grădiniței Mica and Kids Popești Leordeni",
+        url: "/images/og-default.webp",
+        width: 1200,
+        height: 630,
+        alt: "Grădiniță Popești Leordeni — Mica and Kids | Creșă & Afterschool",
       },
     ],
   },
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: "Grădiniță Popești Leordeni — Mica and Kids",
     description:
       "Creșă, grădiniță, afterschool în Popești Leordeni, Ilfov. Învățare prin joacă și natură.",
-    images: ["/images/mascota/albinuta.webp"],
+    images: ["/images/og-default.webp"],
   },
   robots: {
     index: true,

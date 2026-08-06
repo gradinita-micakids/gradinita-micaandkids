@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       "Grădiniță pentru copii 3-6 ani în Popești Leordeni, Ilfov. Învățare prin joacă, natură și pregătire pentru școală.",
     url: "https://gradinitamicaandkids.ro/gradinita-popesti-leordeni",
-    images: ["/images/mascota/albinuta.webp"],
+    images: ["/images/og-default.webp"],
   },
 };
 

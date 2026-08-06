@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Articole educaționale pentru părinți despre grădiniță, educație preșcolară și dezvoltarea copilului.",
     url: "https://gradinitamicaandkids.ro/blog",
-    images: ["/images/mascota/albinuta.webp"],
+    images: ["/images/og-default.webp"],
   },
 };
 

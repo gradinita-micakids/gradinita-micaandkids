@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       "Creșă, grădiniță, afterschool, tabere și excursii în Popești Leordeni, Ilfov.",
     url: "https://gradinitamicaandkids.ro/servicii",
-    images: ["/images/mascota/albinuta.webp"],
+    images: ["/images/og-default.webp"],
   },
 };
 

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       "Pregătirea pentru școală nu înseamnă citit la 5 ani. Ce abilități are nevoie copilul și cum se construiesc.",
     url: "https://gradinitamicaandkids.ro/blog/pregatirea-pentru-scoala",
-    images: ["/images/mascota/albinuta.webp"],
+    images: ["/images/og-default.webp"],
   },
 };
 

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       "Ghid practic pentru părinți: cum să alegi grădinița potrivită. Ce să verifici, ce întrebări să pui.",
     url: "https://gradinitamicaandkids.ro/blog/cum-alegi-gradinita",
-    images: ["/images/mascota/albinuta.webp"],
+    images: ["/images/og-default.webp"],
   },
 };
 

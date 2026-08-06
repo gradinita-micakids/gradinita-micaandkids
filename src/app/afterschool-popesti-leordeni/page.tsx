@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       "Afterschool pentru copii 6-12 ani în Popești Leordeni, Ilfov. Sprijin pentru teme, activități creative și sport.",
     url: "https://gradinitamicaandkids.ro/afterschool-popesti-leordeni",
-    images: ["/images/mascota/albinuta.webp"],
+    images: ["/images/og-default.webp"],
   },
 };
 

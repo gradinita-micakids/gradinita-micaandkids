@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       "Un brand inovativ de educație preșcolară în Popești Leordeni, Ilfov. Învățare prin joacă, natură și creativitate.",
     url: "https://gradinitamicaandkids.ro/despre-noi",
-    images: ["/images/mascota/albinuta.webp"],
+    images: ["/images/og-default.webp"],
   },
 };
 
