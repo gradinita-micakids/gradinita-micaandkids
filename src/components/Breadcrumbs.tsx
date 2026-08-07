@@ -16,13 +16,13 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
         "@type": "ListItem",
         position: 1,
         name: "Acasă",
-        item: "https://gradinitamicaandkids.ro",
+        item: "https://www.gradinitamicaandkids.ro",
       },
       ...items.map((item, i) => ({
         "@type": "ListItem",
         position: i + 2,
         name: item.name,
-        item: `https://gradinitamicaandkids.ro${item.path}`,
+        item: `https://www.gradinitamicaandkids.ro${item.path}`,
       })),
     ],
   };

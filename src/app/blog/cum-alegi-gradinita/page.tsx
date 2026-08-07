@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Cum să alegi grădinița potrivită pentru copilul tău",
     description:
       "Ghid practic pentru părinți: cum să alegi grădinița potrivită. Ce să verifici, ce întrebări să pui.",
-    url: "https://gradinitamicaandkids.ro/blog/cum-alegi-gradinita",
+    url: "https://www.gradinitamicaandkids.ro/blog/cum-alegi-gradinita",
     images: ["/images/og-default.webp"],
   },
 };
@@ -67,7 +67,7 @@ const blogJsonLd = {
   dateModified: "2026-01-15",
   mainEntityOfPage: {
     "@type": "WebPage",
-    url: "https://gradinitamicaandkids.ro/blog/cum-alegi-gradinita",
+    url: "https://www.gradinitamicaandkids.ro/blog/cum-alegi-gradinita",
   },
 };
 

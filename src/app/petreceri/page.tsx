@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Petreceri copii weekend — Grădiniță Popești Leordeni | Mica and Kids",
     description:
       "Închiriem locația din Popești Leordeni pentru petreceri de copii în weekend.",
-    url: "https://gradinitamicaandkids.ro/petreceri",
+    url: "https://www.gradinitamicaandkids.ro/petreceri",
     images: ["/images/og-default.webp"],
   },
 };
@@ -59,7 +59,7 @@ export default function PetreceriPage() {
     name: "Petreceri de copii în weekend — Mica and Kids Popești Leordeni",
     description:
       "Închiriere locație Mica and Kids pentru petreceri de copii în weekend. Spațiu sigur, curat și distractiv cu echipă dedicată.",
-    url: "https://gradinitamicaandkids.ro/petreceri",
+    url: "https://www.gradinitamicaandkids.ro/petreceri",
     location: {
       "@type": "Place",
       name: "Mica and Kids",

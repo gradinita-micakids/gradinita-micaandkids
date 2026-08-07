@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Creșă în Popești Leordeni",
     description:
       "Creșă pentru copii 1,5-3 ani în Popești Leordeni, Ilfov. Îngrijire afectuoasă, activități în aer liber și personal calificat.",
-    url: "https://gradinitamicaandkids.ro/cresa-popesti-leordeni",
+    url: "https://www.gradinitamicaandkids.ro/cresa-popesti-leordeni",
     images: ["/images/og-default.webp"],
   },
 };

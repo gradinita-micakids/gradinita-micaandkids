@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Creșă pentru copiii din Berceni",
     description:
       "Creșă aproape de Berceni, în Popești Leordeni. Grupuri mici, aer liber și îngrijire afectuoasă pentru copii 1,5-3 ani.",
-    url: "https://gradinitamicaandkids.ro/cresa-berceni",
+    url: "https://www.gradinitamicaandkids.ro/cresa-berceni",
     images: ["/images/og-default.webp"],
   },
 };

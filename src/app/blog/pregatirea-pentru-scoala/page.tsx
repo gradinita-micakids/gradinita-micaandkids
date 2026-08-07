@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Pregătirea pentru școală — ce contează cu adevărat",
     description:
       "Pregătirea pentru școală nu înseamnă citit la 5 ani. Ce abilități are nevoie copilul și cum se construiesc.",
-    url: "https://gradinitamicaandkids.ro/blog/pregatirea-pentru-scoala",
+    url: "https://www.gradinitamicaandkids.ro/blog/pregatirea-pentru-scoala",
     images: ["/images/og-default.webp"],
   },
 };
@@ -67,7 +67,7 @@ const blogJsonLd = {
   dateModified: "2026-01-25",
   mainEntityOfPage: {
     "@type": "WebPage",
-    url: "https://gradinitamicaandkids.ro/blog/pregatirea-pentru-scoala",
+    url: "https://www.gradinitamicaandkids.ro/blog/pregatirea-pentru-scoala",
   },
 };
 

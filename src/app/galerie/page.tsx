@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Galerie — Grădiniță Popești Leordeni | Mica and Kids",
     description:
       "Activități în aer liber, natură, animale și multă bucurie în Popești Leordeni, Ilfov.",
-    url: "https://gradinitamicaandkids.ro/galerie",
+    url: "https://www.gradinitamicaandkids.ro/galerie",
     images: ["/images/galerie/activitati-creative-copii-gradinita.webp"],
   },
 };
@@ -39,10 +39,10 @@ export default function GaleriePage() {
     name: "Galerie Mica and Kids — Popești Leordeni",
     description:
       "Activități în aer liber, natură, animale și multă bucurie la Mica and Kids Popești Leordeni.",
-    url: "https://gradinitamicaandkids.ro/galerie",
+    url: "https://www.gradinitamicaandkids.ro/galerie",
     image: galleryItems.map((item) => ({
       "@type": "ImageObject",
-      contentUrl: `https://gradinitamicaandkids.ro${item.src}`,
+      contentUrl: `https://www.gradinitamicaandkids.ro${item.src}`,
       description: item.alt,
     })),
   };

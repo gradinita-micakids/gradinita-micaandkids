@@ -23,7 +23,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gradinitamicaandkids.ro"),
+  metadataBase: new URL("https://www.gradinitamicaandkids.ro"),
   title: {
     default: "Grădiniță Popești Leordeni — Mica and Kids | Creșă & Afterschool Ilfov",
     template: "%s | Mica and Kids",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: "Grădiniță Popești Leordeni — Mica and Kids | Creșă & Afterschool Ilfov",
     description:
       "Grădiniță Popești Leordeni — creșă, grădiniță, afterschool, tabere și excursii. Învățare prin joacă și natură în Ilfov.",
-    url: "https://gradinitamicaandkids.ro",
+    url: "https://www.gradinitamicaandkids.ro",
     images: [
       {
         url: "/images/og-default.webp",

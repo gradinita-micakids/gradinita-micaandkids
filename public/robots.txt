@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gradinitamicaandkids.ro/sitemap.xml
+Sitemap: https://www.gradinitamicaandkids.ro/sitemap.xml

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Tabere și Excursii pentru Copii în Popești Leordeni | Mica and Kids",
     description:
       "Tabere tematice, excursii educaționale și sleepover pentru copii în Popești Leordeni, Ilfov. Aventuri în natură și dezvoltare prin experiență.",
-    url: "https://gradinitamicaandkids.ro/tabere-excursii-copii-popesti-leordeni",
+    url: "https://www.gradinitamicaandkids.ro/tabere-excursii-copii-popesti-leordeni",
     images: ["/images/galerie/explorare-natura-copii-gradinita.webp"],
   },
 };

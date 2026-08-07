@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Creșă Privată în Popești Leordeni | Mica and Kids",
     description:
       "Creșă privată pentru copii 1,5-3 ani în Popești Leordeni, Ilfov. Îngrijire afectuoasă, activități senzoriale și program flexibil.",
-    url: "https://gradinitamicaandkids.ro/cresa-privata-popesti-leordeni",
+    url: "https://www.gradinitamicaandkids.ro/cresa-privata-popesti-leordeni",
     images: ["/images/galerie/activitati-senzoriale-copii.webp"],
   },
 };
@@ -41,7 +41,7 @@ export default function CresaPrivataPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Creșă Privată Popești Leordeni — Mica and Kids",
-    url: "https://gradinitamicaandkids.ro/cresa-privata-popesti-leordeni",
+    url: "https://www.gradinitamicaandkids.ro/cresa-privata-popesti-leordeni",
     serviceType: "Creșă Privată",
     areaServed: "Popești Leordeni, Ilfov",
     description:

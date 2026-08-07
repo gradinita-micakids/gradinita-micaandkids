@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Blog — Sfaturi pentru părinți",
     description:
       "Articole educaționale pentru părinți despre grădiniță, educație preșcolară și dezvoltarea copilului.",
-    url: "https://gradinitamicaandkids.ro/blog",
+    url: "https://www.gradinitamicaandkids.ro/blog",
     images: ["/images/og-default.webp"],
   },
 };

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Despre noi — Grădiniță Popești Leordeni | Mica and Kids",
     description:
       "Un brand inovativ de educație preșcolară în Popești Leordeni, Ilfov. Învățare prin joacă, natură și creativitate.",
-    url: "https://gradinitamicaandkids.ro/despre-noi",
+    url: "https://www.gradinitamicaandkids.ro/despre-noi",
     images: ["/images/og-default.webp"],
   },
 };
@@ -33,8 +33,8 @@ export default function DespreNoiPage() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Mica and Kids",
-    url: "https://gradinitamicaandkids.ro",
-    logo: "https://gradinitamicaandkids.ro/images/mascota/albinuta.webp",
+    url: "https://www.gradinitamicaandkids.ro",
+    logo: "https://www.gradinitamicaandkids.ro/images/mascota/albinuta.webp",
     description:
       "Mica and Kids — brand inovativ de educație preșcolară în Popești Leordeni, Ilfov. Învățare prin joacă, natură și creativitate.",
     founders: [

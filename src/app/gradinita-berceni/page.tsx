@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Grădiniță pentru copiii din Berceni",
     description:
       "Grădiniță aproape de Berceni, în Popești Leordeni. Învățare prin joacă, natură și activități în aer liber.",
-    url: "https://gradinitamicaandkids.ro/gradinita-berceni",
+    url: "https://www.gradinitamicaandkids.ro/gradinita-berceni",
     images: ["/images/og-default.webp"],
   },
 };

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Grădiniță Privată în Popești Leordeni | Mica and Kids",
     description:
       "Grădiniță privată pentru copii 3-6 ani în Popești Leordeni, Ilfov. Învățare prin joacă, natură și creativitate. Program flexibil și personal calificat.",
-    url: "https://gradinitamicaandkids.ro/gradinita-privata-popesti-leordeni",
+    url: "https://www.gradinitamicaandkids.ro/gradinita-privata-popesti-leordeni",
     images: ["/images/galerie/activitati-creative-copii-gradinita.webp"],
   },
 };

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Activități senzoriale pentru copii — ghid practic",
     description:
       "Activități senzoriale pentru copii 1,5-6 ani: ce sunt, de ce contează și cum le faci acasă.",
-    url: "https://gradinitamicaandkids.ro/blog/activitati-senzoriale-copii",
+    url: "https://www.gradinitamicaandkids.ro/blog/activitati-senzoriale-copii",
     images: ["/images/og-default.webp"],
   },
 };
@@ -67,7 +67,7 @@ const blogJsonLd = {
   dateModified: "2026-02-01",
   mainEntityOfPage: {
     "@type": "WebPage",
-    url: "https://gradinitamicaandkids.ro/blog/activitati-senzoriale-copii",
+    url: "https://www.gradinitamicaandkids.ro/blog/activitati-senzoriale-copii",
   },
 };
 

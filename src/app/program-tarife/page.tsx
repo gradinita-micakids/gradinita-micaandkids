@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Program & Tarife — Grădiniță Popești Leordeni | Mica and Kids",
     description:
       "Program și tarife pentru creșă, grădiniță și afterschool în Popești Leordeni, Ilfov.",
-    url: "https://gradinitamicaandkids.ro/program-tarife",
+    url: "https://www.gradinitamicaandkids.ro/program-tarife",
     images: ["/images/og-default.webp"],
   },
 };
