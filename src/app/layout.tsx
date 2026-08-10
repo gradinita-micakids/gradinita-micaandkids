@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { DynaPuff, Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -7,6 +6,7 @@ import Footer from "@/components/Footer";
 import Preloader from "@/components/Preloader";
 import Kid3DWrapper from "@/components/Kid3DWrapper";
 import Phone3D from "@/components/Phone3D";
+import CookieConsent from "@/components/CookieConsent";
 
 const dynapuff = DynaPuff({
   subsets: ["latin"],
@@ -88,18 +88,6 @@ export default function RootLayout({
   return (
     <html lang="ro" className={`${dynapuff.variable} ${nunito.variable}`}>
       <head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-MJEEM8GS5W"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-MJEEM8GS5W');
-          `}
-        </Script>
       </head>
       <body className="font-body antialiased">
         <Preloader />
@@ -110,6 +98,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </div>
+        <CookieConsent />
       </body>
     </html>
   );
