@@ -6,14 +6,14 @@ import FAQJsonLd from "@/components/FAQJsonLd";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Afterschool în Popești Leordeni",
+  title: "Afterschool în Popești Leordeni | After School Mica and Kids",
   description:
-    "Afterschool pentru copii 6-12 ani în Popești Leordeni, Ilfov. Sprijin pentru teme, activități creative, sport și dezvoltare personală după programul școlar.",
+    "Afterschool și after school pentru copii 6-12 ani în Popești Leordeni, Ilfov. Sprijin pentru teme, activități creative, sport și dezvoltare personală. Program flexibil, tarife clare.",
   alternates: { canonical: "/afterschool-popesti-leordeni" },
   openGraph: {
-    title: "Afterschool în Popești Leordeni",
+    title: "Afterschool în Popești Leordeni | After School Mica and Kids",
     description:
-      "Afterschool pentru copii 6-12 ani în Popești Leordeni, Ilfov. Sprijin pentru teme, activități creative și sport.",
+      "Afterschool și after school pentru copii 6-12 ani în Popești Leordeni, Ilfov. Sprijin pentru teme, activități creative și sport.",
     url: "https://www.gradinitamicaandkids.ro/afterschool-popesti-leordeni",
     images: ["/images/og-default.webp"],
   },
@@ -94,6 +94,7 @@ export default function AfterschoolPopestiLeordeniPage() {
             </p>
             <h1 className="font-display text-4xl md:text-6xl font-bold text-green-dark mb-6 leading-tight">
               Afterschool în Popești Leordeni
+              <span className="block text-2xl md:text-3xl text-green-light mt-2">After School Mica and Kids</span>
             </h1>
             <p className="text-foreground/70 text-lg leading-relaxed mb-6">
               După orele de școală, copilul are nevoie de un loc unde să
@@ -279,6 +280,43 @@ export default function AfterschoolPopestiLeordeniPage() {
               <h3 className="font-display text-lg font-bold text-green-dark mb-2">Program & Tarife</h3>
               <p className="text-sm text-foreground/60">Program scurt, mediu și lung — vezi tarifele și ce este inclus</p>
             </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Long-tail SEO content */}
+      <div className="py-16 bg-white/80">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="font-display text-2xl md:text-3xl font-bold text-green-dark mb-6">
+            Program afterschool Popești Leordeni — detalii utile
+          </h2>
+          <div className="space-y-4 text-foreground/70 leading-relaxed">
+            <p>
+              <strong className="text-green-dark">Program after school Popești Leordeni</strong> — afterschool-ul
+              Mica and Kids funcționează Luni-Vineri, cu sosirea copiilor între
+              12:00-13:30 și program până la 18:30. În vacanțele școlare oferim
+              program complet 08:00-18:00 cu activități speciale.
+            </p>
+            <p>
+              <strong className="text-green-dark">Preț afterschool Popești Leordeni</strong> — tarifele variază
+              în funcție de programul ales (scurt, mediu sau lung). Vezi pagina de{" "}
+              <Link href="/program-tarife" className="text-green-dark underline hover:text-green-light">program și tarife</Link>{" "}
+              pentru detalii complete. Include gustare caldă, supraveghere pentru
+              teme, activități creative și sport.
+            </p>
+            <p>
+              <strong className="text-green-dark">Afterschool pentru copii de școală primară</strong> — primim
+              copii de 6-12 ani, clasele I-VI. Educatoarele noastre au experiență
+              cu copiii de școală primară și oferă sprijin personalizat pentru
+              teme la matematică, română și alte obiecte.
+            </p>
+            <p>
+              <strong className="text-green-dark">After school cu transport din Popești Leordeni</strong> —
+              copiii pot fi aduși de părinți direct la noi, sau putem discuta
+              despre preluarea de la școală în funcție de numărul de copii.
+              Suntem în Strada Sfântul Gheorghe 5B, Popești Leordeni, aproape
+              de școlile din zonă.
+            </p>
           </div>
         </div>
       </div>
