@@ -70,7 +70,7 @@ export default function TermeniPage() {
               5. Utilizarea site-ului
             </h2>
             <p>
-              Conținutul site-ului gradinitamicaandkids.ro este proprietatea Mica and Kids.
+              Conținutul site-ului micaandkids.ro este proprietatea Mica and Kids.
               Nu este permisă reproducerea sau utilizarea conținutului fără acordul nostru.
             </p>
           </div>

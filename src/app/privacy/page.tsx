@@ -25,7 +25,7 @@ export default function PrivacyPage() {
             </h2>
             <p>
               Mica and Kids („noi”) respectă confidențialitatea vizitatorilor site-ului
-              gradinitamicaandkids.ro. Această politică descrie modul în care colectăm,
+              micaandkids.ro. Această politică descrie modul în care colectăm,
               folosim și protejăm datele cu caracter personal, conform Regulamentului
               General privind Protecția Datelor (GDPR — Regulamentul UE 2016/679).
             </p>

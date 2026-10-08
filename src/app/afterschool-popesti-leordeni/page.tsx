@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Afterschool în Popești Leordeni | After School Mica and Kids",
     description:
       "Afterschool și after school pentru copii 6-12 ani în Popești Leordeni, Ilfov. Sprijin pentru teme, activități creative și sport.",
-    url: "https://www.gradinitamicaandkids.ro/afterschool-popesti-leordeni",
+    url: "https://www.micaandkids.ro/afterschool-popesti-leordeni",
     images: ["/images/og-default.webp"],
   },
 };

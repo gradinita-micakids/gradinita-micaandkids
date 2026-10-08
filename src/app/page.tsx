@@ -13,8 +13,8 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Preschool",
     name: "Grădiniță Popești Leordeni — Mica and Kids | Creșă & Afterschool",
-    image: "https://www.gradinitamicaandkids.ro/images/mascota/albinuta.webp",
-    url: "https://www.gradinitamicaandkids.ro",
+    image: "https://www.micaandkids.ro/images/mascota/albinuta.webp",
+    url: "https://www.micaandkids.ro",
     telephone: "+40740467056",
     email: "office@gradinitamicaandkids.ro",
     address: {
@@ -83,7 +83,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Mica and Kids — Grădiniță Popești Leordeni",
-    url: "https://www.gradinitamicaandkids.ro",
+    url: "https://www.micaandkids.ro",
     inLanguage: "ro-RO",
     description:
       "Grădiniță, creșă și afterschool în Popești Leordeni, Ilfov. Învățare prin joacă, natură și creativitate.",
@@ -93,8 +93,8 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Mica and Kids",
-    url: "https://www.gradinitamicaandkids.ro",
-    logo: "https://www.gradinitamicaandkids.ro/images/mascota/albinuta.webp",
+    url: "https://www.micaandkids.ro",
+    logo: "https://www.micaandkids.ro/images/mascota/albinuta.webp",
     founders: [
       {
         "@type": "Person",

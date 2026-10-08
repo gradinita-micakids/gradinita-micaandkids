@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Contact — Grădiniță Popești Leordeni | Mica and Kids",
     description:
       "Contactează-ne pentru înscrieri, vizite și informații în Popești Leordeni, Ilfov.",
-    url: "https://www.gradinitamicaandkids.ro/contact",
+    url: "https://www.micaandkids.ro/contact",
     images: ["/images/og-default.webp"],
   },
 };
@@ -24,7 +24,7 @@ export default function ContactPage() {
     name: "Contact — Mica and Kids Popești Leordeni",
     description:
       "Contactează Mica and Kids pentru înscrieri, vizite și informații în Popești Leordeni, Ilfov.",
-    url: "https://www.gradinitamicaandkids.ro/contact",
+    url: "https://www.micaandkids.ro/contact",
     mainEntity: {
       "@type": "Organization",
       name: "Mica and Kids",
