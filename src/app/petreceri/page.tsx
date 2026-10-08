@@ -91,7 +91,7 @@ export default function PetreceriPage() {
       "@type": "Organization",
       name: "Mica and Kids",
       telephone: "+40740467056",
-      email: "office@gradinitamicaandkids.ro",
+      email: "office@micaandkids.ro",
     },
   };
 

@@ -58,7 +58,7 @@ export default function DespreNoiPage() {
       addressCountry: "RO",
     },
     telephone: "+40740467056",
-    email: "office@gradinitamicaandkids.ro",
+    email: "office@micaandkids.ro",
     slogan: "Învățare prin joacă, libertate și conectare cu natura",
   };
 

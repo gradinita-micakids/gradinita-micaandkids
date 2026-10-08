@@ -82,7 +82,7 @@ export default function TermeniPage() {
             <p>
               Pentru întrebări legate de termeni și condiții:
               <br />
-              Email: <a href="mailto:office@gradinitamicaandkids.ro" className="text-green-dark underline">office@gradinitamicaandkids.ro</a>
+              Email: <a href="mailto:office@micaandkids.ro" className="text-green-dark underline">office@micaandkids.ro</a>
               <br />
               Telefon: 0740 467 056
             </p>

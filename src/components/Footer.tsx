@@ -56,7 +56,7 @@ export default function Footer() {
               <li className="text-white/70 text-sm">Strada Sfântul Gheorghe 5B, Popești Leordeni, Ilfov</li>
               <li><a href="tel:0740467056" className="text-white/70 hover:text-yellow no-underline transition-colors text-sm">0740 467 056</a></li>
               <li><a href="tel:0762119691" className="text-white/70 hover:text-yellow no-underline transition-colors text-sm">0762 119 691</a></li>
-              <li><a href="mailto:office@gradinitamicaandkids.ro" className="text-white/70 hover:text-yellow no-underline transition-colors text-sm">office@gradinitamicaandkids.ro</a></li>
+              <li><a href="mailto:office@micaandkids.ro" className="text-white/70 hover:text-yellow no-underline transition-colors text-sm">office@micaandkids.ro</a></li>
             </ul>
           </div>
 

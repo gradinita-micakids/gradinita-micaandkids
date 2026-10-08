@@ -16,7 +16,7 @@ export default function Home() {
     image: "https://www.micaandkids.ro/images/mascota/albinuta.webp",
     url: "https://www.micaandkids.ro",
     telephone: "+40740467056",
-    email: "office@gradinitamicaandkids.ro",
+    email: "office@micaandkids.ro",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Strada Sfântul Gheorghe 5B",
@@ -114,7 +114,7 @@ export default function Home() {
       addressCountry: "RO",
     },
     telephone: "+40740467056",
-    email: "office@gradinitamicaandkids.ro",
+    email: "office@micaandkids.ro",
     sameAs: ["https://www.instagram.com/micaandkids/"],
   };
 

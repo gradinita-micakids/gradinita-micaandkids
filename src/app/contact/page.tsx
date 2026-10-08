@@ -29,7 +29,7 @@ export default function ContactPage() {
       "@type": "Organization",
       name: "Mica and Kids",
       telephone: ["+40740467056", "+40762119691"],
-      email: "office@gradinitamicaandkids.ro",
+      email: "office@micaandkids.ro",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Strada Sfântul Gheorghe 5B",
@@ -47,7 +47,7 @@ export default function ContactPage() {
       contactPoint: {
         "@type": "ContactPoint",
         telephone: "+40740467056",
-        email: "office@gradinitamicaandkids.ro",
+        email: "office@micaandkids.ro",
         contactType: "customer service",
         areaServed: "Popești Leordeni, Ilfov",
         availableLanguage: ["Romanian"],
@@ -101,7 +101,7 @@ export default function ContactPage() {
                   <span className="text-2xl">✉️</span>
                   <div>
                     <p className="text-xs text-foreground/50 uppercase tracking-wider mb-1">Email</p>
-                    <a href="mailto:office@gradinitamicaandkids.ro" className="text-foreground/80 hover:text-green-dark no-underline">office@gradinitamicaandkids.ro</a>
+                    <a href="mailto:office@micaandkids.ro" className="text-foreground/80 hover:text-green-dark no-underline">office@micaandkids.ro</a>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
